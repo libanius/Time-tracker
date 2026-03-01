@@ -1,0 +1,140 @@
+{
+  "projects": [
+    {
+      "id": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "name": "Warehouse Alessandra",
+      "hourlyRateUsd": 28,
+      "color": "#ffb347",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "name": "Greg",
+      "hourlyRateUsd": 28,
+      "color": "#00e5a0",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "name": "Warehouse- Augusto",
+      "hourlyRateUsd": 28,
+      "color": "#ff6b6b",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "name": "Jhon - Coral Spring",
+      "hourlyRateUsd": 28,
+      "color": "#7c6bff",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-02-28T23:30:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "0523cfee-a66b-4e3f-a886-9f20c556e6b5",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-27T07:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2b29a5c7-1898-48c0-bada-c04d5690183e",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2e92fca8-8eda-40b8-8c8f-765fd904e80f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-02-28T09:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2f29a54a-2270-46ef-8045-df796a60d66f",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T17:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "38e21fb2-2c05-4d02-a696-0b497d47e3c7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-02-28T16:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3a91b3c0-87d9-4095-b347-40a1bc282687",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-25T09:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3e30ab0f-78bc-428c-b906-1f8fe0721563",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-26T20:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "410f2e28-fc5e-42e7-a775-375751d43492",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "46bb0dcd-9538-41b9-ad3d-e9e082dc5e84",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T08:27:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "55007d4c-8fca-43de-bd40-2958bc1cdcd9",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-26T08:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "78482bd3-ac41-4941-9558-373f2fc67861",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-27T16:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "ed865c10-4887-4a68-83a5-6fe21f7e972a",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-25T15:10:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    }
+  ],
+  "v": 2,
+  "at": "2026-03-01T22:40:56.494Z"
+}
