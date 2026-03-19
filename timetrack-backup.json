@@ -1,0 +1,483 @@
+{
+  "projects": [
+    {
+      "id": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "name": "Lindsay",
+      "hourlyRateUsd": 28,
+      "color": "#4ecdc4",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-03-10T12:42:15.987Z",
+      "updatedAt": "2026-03-16T15:15:21.742Z"
+    },
+    {
+      "id": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "name": "Warehouse - Retirar Madeiras",
+      "hourlyRateUsd": 28,
+      "color": "#ff9f43",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-03-18T21:12:40.108Z",
+      "updatedAt": "2026-03-18T21:12:40.108Z"
+    },
+    {
+      "id": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "name": "Warehouse Alessandra",
+      "hourlyRateUsd": 28,
+      "color": "#ffb347",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-06T01:22:08.018Z",
+      "active": false
+    },
+    {
+      "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "name": "Greg",
+      "hourlyRateUsd": 28,
+      "color": "#00e5a0",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-13T12:30:45.416Z",
+      "active": false
+    },
+    {
+      "id": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "name": "Warehouse- Augusto",
+      "hourlyRateUsd": 28,
+      "color": "#ff6b6b",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-06T01:22:09.199Z",
+      "active": false
+    },
+    {
+      "id": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "name": "Sujata Bathia - Coral Spring",
+      "hourlyRateUsd": 28,
+      "color": "#7c6bff",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-02T15:47:55.162Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "017cde97-974f-4540-a1c4-e54e5d1c0bfa",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T21:51:20.671Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T21:51:20.672Z"
+    },
+    {
+      "id": "0523cfee-a66b-4e3f-a886-9f20c556e6b5",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-27T07:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "0578fe58-7df9-4fd6-86b5-ec9bdfea6360",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-02T13:30:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-02T13:42:35.126Z"
+    },
+    {
+      "id": "13d91aa5-52ae-45c0-bb74-0be0e72a8dfc",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T14:03:41.628Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T14:03:41.628Z"
+    },
+    {
+      "id": "1e346f8b-665e-453a-8d85-68890b9efac7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-12T12:44:03.456Z",
+      "source": "manual",
+      "createdAt": "2026-03-12T12:44:03.457Z"
+    },
+    {
+      "id": "23232aea-620f-47a4-a4c3-3867206f15b1",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-03T13:17:23.732Z",
+      "source": "manual",
+      "createdAt": "2026-03-03T13:17:23.734Z"
+    },
+    {
+      "id": "23401765-1aae-427b-9f9a-8c8ee9afb412",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-14T21:01:38.364Z",
+      "source": "manual",
+      "createdAt": "2026-03-14T21:01:38.365Z"
+    },
+    {
+      "id": "25db6ffd-82c8-4895-bd30-ee40bb43614a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-02T22:03:00.587Z",
+      "source": "manual",
+      "createdAt": "2026-03-02T22:03:00.588Z"
+    },
+    {
+      "id": "2b29a5c7-1898-48c0-bada-c04d5690183e",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2e92fca8-8eda-40b8-8c8f-765fd904e80f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-02-28T09:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2f29a54a-2270-46ef-8045-df796a60d66f",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T17:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "309014ec-552f-4fa5-a895-be380c953bc5",
+      "projectId": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "type": "checkin",
+      "timestampISO": "2026-03-18T21:12:50.906Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:12:50.907Z"
+    },
+    {
+      "id": "31ddb30b-ac74-4681-b88c-07eda6a79846",
+      "projectId": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "type": "checkout",
+      "timestampISO": "2026-03-18T21:41:46.029Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:41:46.030Z"
+    },
+    {
+      "id": "3418f191-3d6d-4583-834a-a147a66ad512",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-09T22:02:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-09T22:14:58.315Z"
+    },
+    {
+      "id": "353d119a-c3a9-4071-b0b7-0b34596a0642",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T15:15:15.007Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T15:15:15.008Z"
+    },
+    {
+      "id": "38e21fb2-2c05-4d02-a696-0b497d47e3c7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-02-28T16:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "396898a0-594f-44c4-919c-50364d7ec4db",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-05T14:27:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:07.196Z"
+    },
+    {
+      "id": "3a91b3c0-87d9-4095-b347-40a1bc282687",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-25T09:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3cca6dd3-cc85-468e-9377-e1e6a7231e54",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T14:03:26.886Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T14:03:26.887Z"
+    },
+    {
+      "id": "3e30ab0f-78bc-428c-b906-1f8fe0721563",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-26T20:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3ffc4150-244f-476e-a97c-efcbc24051df",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-06T22:33:40.567Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T22:33:40.570Z"
+    },
+    {
+      "id": "4058aa94-2b90-4723-9c9a-d569971bd1ad",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-11T21:39:29.505Z",
+      "source": "manual",
+      "createdAt": "2026-03-11T21:39:29.507Z"
+    },
+    {
+      "id": "410f2e28-fc5e-42e7-a775-375751d43492",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "4122f381-fe8e-44d0-b62f-e7397b5027f6",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-04T13:48:52.372Z",
+      "source": "manual",
+      "createdAt": "2026-03-04T13:48:52.375Z"
+    },
+    {
+      "id": "4461be75-a7df-4c1b-ad99-986daf4d438e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-13T12:30:52.230Z",
+      "source": "manual",
+      "createdAt": "2026-03-13T12:30:52.231Z"
+    },
+    {
+      "id": "46bb0dcd-9538-41b9-ad3d-e9e082dc5e84",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T08:27:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "50841b3b-264e-4749-9bf2-c417e977144b",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T18:16:48.906Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T18:16:48.907Z"
+    },
+    {
+      "id": "54e505be-49f1-4370-9e8e-328718965bfd",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-05T16:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:29.319Z"
+    },
+    {
+      "id": "55007d4c-8fca-43de-bd40-2958bc1cdcd9",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-26T08:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "5558ffa3-07a5-4ebd-80ca-6cd406503f80",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-03T21:01:10.095Z",
+      "source": "manual",
+      "createdAt": "2026-03-03T21:01:10.097Z"
+    },
+    {
+      "id": "5933cc9c-484a-451d-bc12-d951ae403cab",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T21:48:33.763Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T21:48:33.765Z"
+    },
+    {
+      "id": "6482a420-07a4-4b92-8e40-e78bbe8a92c8",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-04T22:06:33.064Z",
+      "source": "manual",
+      "createdAt": "2026-03-04T22:06:33.069Z"
+    },
+    {
+      "id": "78482bd3-ac41-4941-9558-373f2fc67861",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-27T16:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "7b668be4-523e-4196-8205-4168db70eeeb",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-14T12:48:50.713Z",
+      "source": "manual",
+      "createdAt": "2026-03-14T12:48:50.715Z"
+    },
+    {
+      "id": "86f1f54e-0f78-45d3-8017-cecf4208c2bd",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-13T21:00:54.299Z",
+      "source": "manual",
+      "createdAt": "2026-03-13T21:00:54.300Z"
+    },
+    {
+      "id": "92a7625f-81f0-4bc8-bf45-9c83ab416244",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-18T13:46:48.465Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T13:46:48.466Z"
+    },
+    {
+      "id": "9312aa7e-dfb6-4537-80ba-86082e752fc3",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-06T13:29:02.063Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T13:29:02.064Z"
+    },
+    {
+      "id": "96c5227d-8762-4bf2-8247-c1132a0c6a7a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-11T13:32:00.361Z",
+      "source": "manual",
+      "createdAt": "2026-03-11T13:32:00.362Z"
+    },
+    {
+      "id": "98dfd43d-bf8a-47b2-9e47-31551d233729",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T16:44:22.026Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T16:44:22.026Z"
+    },
+    {
+      "id": "a3f898fe-b438-4451-9321-d04427076768",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-18T21:12:09.267Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:12:09.268Z"
+    },
+    {
+      "id": "b03da97f-9de7-436d-b788-11e119294b86",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T12:42:27.175Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T12:42:27.176Z"
+    },
+    {
+      "id": "b607d910-1039-4c89-9215-fc20d0a16663",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T15:15:30.063Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T15:15:30.063Z"
+    },
+    {
+      "id": "bf9e99bc-337b-4500-834b-9ff85d458b59",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T12:34:50.714Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T12:34:50.716Z"
+    },
+    {
+      "id": "c4f7e06f-e96c-483e-8beb-1c5c785ca43c",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-17T21:42:01.588Z",
+      "source": "manual",
+      "createdAt": "2026-03-17T21:42:01.588Z"
+    },
+    {
+      "id": "d298da80-2378-4317-9045-3eab4a92918f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-12T21:28:50.017Z",
+      "source": "manual",
+      "createdAt": "2026-03-12T21:28:50.019Z"
+    },
+    {
+      "id": "d970d06a-a63e-44fe-b434-84e75efb224f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-05T22:11:41.183Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T22:11:41.185Z"
+    },
+    {
+      "id": "d9ef49c1-6a20-4538-aea6-9afb58fc62be",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-05T16:01:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:48.670Z"
+    },
+    {
+      "id": "e16e92b3-f2b0-4303-bc3b-c993125ba15e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-17T12:53:01.635Z",
+      "source": "manual",
+      "createdAt": "2026-03-17T12:53:01.637Z"
+    },
+    {
+      "id": "ed865c10-4887-4a68-83a5-6fe21f7e972a",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-25T15:10:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "ef206c05-16a9-4c0e-876d-ef342a6538c0",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-09T12:28:21.151Z",
+      "source": "manual",
+      "createdAt": "2026-03-09T12:28:21.152Z"
+    },
+    {
+      "id": "f1329ccf-3d50-424f-83d0-91a14d50e01d",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T18:16:54.166Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T18:16:54.166Z"
+    },
+    {
+      "id": "f25bcc75-f14d-4301-b8a5-21e0ca3d539b",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T16:44:16.360Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T16:44:16.361Z"
+    }
+  ],
+  "v": 2,
+  "at": "2026-03-19T01:07:56.508Z"
+}
