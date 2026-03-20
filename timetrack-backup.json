@@ -31,6 +31,16 @@
       "active": false
     },
     {
+      "id": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "name": "Ritholtz",
+      "hourlyRateUsd": 28,
+      "color": "#54a0ff",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-03-19T18:12:44.458Z",
+      "updatedAt": "2026-03-19T18:12:44.458Z"
+    },
+    {
       "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "name": "Greg",
       "hourlyRateUsd": 28,
@@ -94,12 +104,28 @@
       "createdAt": "2026-03-10T14:03:41.628Z"
     },
     {
+      "id": "1c86637f-493b-42db-8b70-65aadd0a1a6d",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-19T18:12:58.968Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T18:12:58.968Z"
+    },
+    {
       "id": "1e346f8b-665e-453a-8d85-68890b9efac7",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
       "timestampISO": "2026-03-12T12:44:03.456Z",
       "source": "manual",
       "createdAt": "2026-03-12T12:44:03.457Z"
+    },
+    {
+      "id": "203ad149-f598-4357-9ad7-ea8ebf565824",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkin",
+      "timestampISO": "2026-03-20T17:09:19.814Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T17:09:19.829Z"
     },
     {
       "id": "23232aea-620f-47a4-a4c3-3867206f15b1",
@@ -270,6 +296,14 @@
       "createdAt": "2026-02-28T23:30:00.000Z"
     },
     {
+      "id": "47cba1e8-8511-4327-8fa1-b82551278e7f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-20T12:34:53.645Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T12:34:53.647Z"
+    },
+    {
       "id": "50841b3b-264e-4749-9bf2-c417e977144b",
       "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "type": "checkout",
@@ -374,6 +408,14 @@
       "createdAt": "2026-03-16T16:44:22.026Z"
     },
     {
+      "id": "9dec0bed-c50e-4067-9ab0-1b982ccd5264",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-19T12:30:44.894Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T12:30:44.895Z"
+    },
+    {
       "id": "a3f898fe-b438-4451-9321-d04427076768",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -414,6 +456,22 @@
       "createdAt": "2026-03-17T21:42:01.588Z"
     },
     {
+      "id": "cae688e4-746c-4d3c-bfa6-e0c36178b58a",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkout",
+      "timestampISO": "2026-03-20T20:33:29.361Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T20:33:29.366Z"
+    },
+    {
+      "id": "ce057980-b7d9-4e6f-ae6b-8ca5fa57e45a",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkin",
+      "timestampISO": "2026-03-19T18:12:58.968Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T18:12:58.973Z"
+    },
+    {
       "id": "d298da80-2378-4317-9045-3eab4a92918f",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -436,6 +494,22 @@
       "timestampISO": "2026-03-05T16:01:00.000Z",
       "source": "manual",
       "createdAt": "2026-03-05T18:55:48.670Z"
+    },
+    {
+      "id": "d9f7f3bd-14e7-4cec-9cec-046e4796824c",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkout",
+      "timestampISO": "2026-03-19T21:52:32.255Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T21:52:32.255Z"
+    },
+    {
+      "id": "dd32e6e0-fec5-4e18-8efa-095116019dab",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-20T17:09:19.814Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T17:09:19.815Z"
     },
     {
       "id": "e16e92b3-f2b0-4303-bc3b-c993125ba15e",
@@ -479,5 +553,5 @@
     }
   ],
   "v": 2,
-  "at": "2026-03-19T01:29:03.078Z"
+  "at": "2026-03-20T21:09:52.962Z"
 }
