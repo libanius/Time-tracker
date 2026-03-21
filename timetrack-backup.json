@@ -352,6 +352,14 @@
       "createdAt": "2026-03-04T22:06:33.069Z"
     },
     {
+      "id": "6fa77a17-dbec-4d05-8dd5-8269d37b8f82",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-21T21:22:35.887Z",
+      "source": "manual",
+      "createdAt": "2026-03-21T21:22:35.888Z"
+    },
+    {
       "id": "78482bd3-ac41-4941-9558-373f2fc67861",
       "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
       "type": "checkout",
@@ -374,6 +382,14 @@
       "timestampISO": "2026-03-13T21:00:54.299Z",
       "source": "manual",
       "createdAt": "2026-03-13T21:00:54.300Z"
+    },
+    {
+      "id": "8a69eea0-bd03-4222-95bd-2d36c9e14e17",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-21T12:45:18.811Z",
+      "source": "manual",
+      "createdAt": "2026-03-21T12:45:18.813Z"
     },
     {
       "id": "92a7625f-81f0-4bc8-bf45-9c83ab416244",
@@ -553,5 +569,5 @@
     }
   ],
   "v": 2,
-  "at": "2026-03-20T23:03:01.234Z"
+  "at": "2026-03-21T22:52:42.307Z"
 }
