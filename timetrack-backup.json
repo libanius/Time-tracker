@@ -36,9 +36,9 @@
       "hourlyRateUsd": 28,
       "color": "#54a0ff",
       "category": "",
-      "active": true,
+      "active": false,
       "createdAt": "2026-03-19T18:12:44.458Z",
-      "updatedAt": "2026-03-19T18:12:44.458Z"
+      "updatedAt": "2026-03-25T13:06:55.514Z"
     },
     {
       "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
@@ -49,6 +49,16 @@
       "createdAt": "2026-02-28T23:30:00.000Z",
       "updatedAt": "2026-03-13T12:30:45.416Z",
       "active": false
+    },
+    {
+      "id": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "name": "Augusto’s House",
+      "hourlyRateUsd": 28,
+      "color": "#ff9f43",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-03-26T16:48:13.975Z",
+      "updatedAt": "2026-03-26T16:48:13.975Z"
     },
     {
       "id": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
@@ -96,12 +106,30 @@
       "createdAt": "2026-03-02T13:42:35.126Z"
     },
     {
+      "id": "07d44d88-ef8b-44da-8b39-95fae2eaad3a",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkin",
+      "timestampISO": "2026-03-26T17:30:00.000Z",
+      "note": "Pintei banheiro, troquei válvula da dish, retirei a dish e reinstalei a dish. Arrumei a cortina / bucha e parafuso",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:24.251Z"
+    },
+    {
       "id": "13d91aa5-52ae-45c0-bb74-0be0e72a8dfc",
       "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "type": "checkin",
       "timestampISO": "2026-03-10T14:03:41.628Z",
       "source": "manual",
       "createdAt": "2026-03-10T14:03:41.628Z"
+    },
+    {
+      "id": "16d728e4-dbe1-472c-a5ec-60be1c302c04",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-23T21:40:00.000Z",
+      "note": "Terminamos completamente: master bed room Pintura, master closet , master bath. Eu e o Fabrício. Amanhã tem que instalar shelves closet. Tenho que comprar fastners",
+      "source": "manual",
+      "createdAt": "2026-03-23T21:40:44.934Z"
     },
     {
       "id": "1c86637f-493b-42db-8b70-65aadd0a1a6d",
@@ -232,6 +260,15 @@
       "createdAt": "2026-02-28T23:30:00.000Z"
     },
     {
+      "id": "3c16ab4a-3886-4128-b331-53a237dec5be",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-25T13:07:00.482Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-25T13:07:00.483Z"
+    },
+    {
       "id": "3cca6dd3-cc85-468e-9377-e1e6a7231e54",
       "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
       "type": "checkout",
@@ -280,6 +317,15 @@
       "createdAt": "2026-03-04T13:48:52.375Z"
     },
     {
+      "id": "42f9fcc9-f8b4-425a-b455-157fb5c8a892",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkout",
+      "timestampISO": "2026-03-26T20:56:31.750Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:31.752Z"
+    },
+    {
       "id": "4461be75-a7df-4c1b-ad99-986daf4d438e",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
@@ -304,12 +350,30 @@
       "createdAt": "2026-03-20T12:34:53.647Z"
     },
     {
+      "id": "4c731816-1198-4586-87a6-1bea335d8b78",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-23T12:22:00.000Z",
+      "note": "Sujata decidiu no final de semana a cor dos trims. Augusto confirmou Sherwood Tan. Comprei na Benjamin Moore começo do dia.",
+      "source": "manual",
+      "createdAt": "2026-03-23T12:22:02.125Z"
+    },
+    {
       "id": "50841b3b-264e-4749-9bf2-c417e977144b",
       "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "type": "checkout",
       "timestampISO": "2026-03-10T18:16:48.906Z",
       "source": "manual",
       "createdAt": "2026-03-10T18:16:48.907Z"
+    },
+    {
+      "id": "5138dfd5-f4c1-4c20-8b76-22bbd7cda33f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-24T21:47:23.292Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-24T21:47:23.293Z"
     },
     {
       "id": "54e505be-49f1-4370-9e8e-328718965bfd",
@@ -355,7 +419,8 @@
       "id": "6fa77a17-dbec-4d05-8dd5-8269d37b8f82",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
-      "timestampISO": "2026-03-21T21:22:35.887Z",
+      "timestampISO": "2026-03-21T21:22:00.000Z",
+      "note": "",
       "source": "manual",
       "createdAt": "2026-03-21T21:22:35.888Z"
     },
@@ -376,6 +441,24 @@
       "createdAt": "2026-03-14T12:48:50.715Z"
     },
     {
+      "id": "85093e17-37f6-4691-839d-2852bc1cbf10",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-27T12:55:12.302Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-27T12:55:12.303Z"
+    },
+    {
+      "id": "8573e097-f944-417e-9592-0377108d0e92",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-24T13:24:19.134Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-24T13:24:19.135Z"
+    },
+    {
       "id": "86f1f54e-0f78-45d3-8017-cecf4208c2bd",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -387,7 +470,8 @@
       "id": "8a69eea0-bd03-4222-95bd-2d36c9e14e17",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
-      "timestampISO": "2026-03-21T12:45:18.811Z",
+      "timestampISO": "2026-03-21T12:45:00.000Z",
+      "note": "Eu, Vilson e Fabrício. Terminamos parte cima, Master bath 1 mao, falta outra, closets master também. Deixamos pronto para limpeza",
       "source": "manual",
       "createdAt": "2026-03-21T12:45:18.813Z"
     },
@@ -430,6 +514,15 @@
       "timestampISO": "2026-03-19T12:30:44.894Z",
       "source": "manual",
       "createdAt": "2026-03-19T12:30:44.895Z"
+    },
+    {
+      "id": "a132308f-dae2-4268-8fb9-c454dc864ca9",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-27T20:57:00.000Z",
+      "note": "Comprei tinta, peguei ó scaffolding e montei. Levei materiais para warehouse, coordenei mudanças e direcionamento com Augusto, orientei e dei suporte para Madson com tradução e etc. Jhon mostrou como que quer instalado as luzes. Andaime posicionado para Rodrigo eletricista. Comprei os metade dos baseboards e descarreguei na garagem.",
+      "source": "manual",
+      "createdAt": "2026-03-27T22:35:11.023Z"
     },
     {
       "id": "a3f898fe-b438-4451-9321-d04427076768",
@@ -528,12 +621,39 @@
       "createdAt": "2026-03-20T17:09:19.815Z"
     },
     {
+      "id": "de888a89-0930-4f00-a1e4-7cbbe4369403",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-26T17:29:00.000Z",
+      "note": "Segunda mão na cozinha e banheiro social",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:24.249Z"
+    },
+    {
       "id": "e16e92b3-f2b0-4303-bc3b-c993125ba15e",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
       "timestampISO": "2026-03-17T12:53:01.635Z",
       "source": "manual",
       "createdAt": "2026-03-17T12:53:01.637Z"
+    },
+    {
+      "id": "e3d4e2c3-eb1a-4bbd-ac62-e7d31ea88b8f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-26T13:11:15.380Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-26T13:11:15.381Z"
+    },
+    {
+      "id": "e55dd29e-88f3-4ba1-882e-da94c19c551a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-25T21:13:00.000Z",
+      "note": "Fizemos o restante das portas e dos trims estava somente eu três pessoas a mais com o Madson. falei com Augusto pois a cliente perguntou algo está fora do contrato que seria a pintura do banco de madeira estava na cozinha das persianas de madeira do quarto do casal da da sala e da entrada da casa. Augusto disse que precisava ser lançado como acréscimo de projeto ainda não falei isso para a cliente",
+      "source": "manual",
+      "createdAt": "2026-03-25T21:13:06.571Z"
     },
     {
       "id": "ed865c10-4887-4a68-83a5-6fe21f7e972a",
@@ -569,5 +689,5 @@
     }
   ],
   "v": 2,
-  "at": "2026-03-21T22:52:42.307Z"
+  "at": "2026-03-27T22:37:38.300Z"
 }
