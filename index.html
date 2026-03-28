@@ -2012,6 +2012,10 @@ function renderSettings(main) {
   }
   updateGhStatus();
   ghCard.appendChild(ghStatus);
+  var ghNote = div('');
+  ghNote.style.cssText = 'font-size:11px;color:var(--mu);margin-bottom:10px;padding:0 2px;line-height:1.5;';
+  ghNote.textContent = '⚠️ Token incluído no backup — use repositório privado';
+  ghCard.appendChild(ghNote);
 
   // Config button
   var cfgBtn = btn('btn bs bfull', '\u2699\uFE0F  Configurar', function() {
@@ -2061,7 +2065,7 @@ function renderSettings(main) {
       onYes: function() {
     bkNowBtn.textContent = 'Enviando...'; bkNowBtn.disabled = true;
     Promise.all([dbAll('projects'), dbAll('events')]).then(function(r) {
-      var json = JSON.stringify({projects:r[0],events:r[1],v:2,at:new Date().toISOString()},null,2);
+      var json = JSON.stringify({projects:r[0],events:r[1],gh:{token:GH.token,repo:GH.repo,path:GH.path},v:2,at:new Date().toISOString()},null,2);
       var b64 = btoa(unescape(encodeURIComponent(json)));
       var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
       // First get current SHA (needed to update existing file)
@@ -2113,8 +2117,16 @@ function renderSettings(main) {
             if (!parsed.projects || !parsed.events) throw new Error('Formato inv\u00E1lido');
             return Promise.all(parsed.projects.map(function(p){ return dbPut('projects',p); }))
               .then(function(){ return Promise.all(parsed.events.map(function(e){ return dbPut('events',e); })); })
+              .then(function() {
+                if (parsed.gh && parsed.gh.token) {
+                  GH.token = parsed.gh.token;
+                  GH.repo  = parsed.gh.repo  || GH.repo;
+                  GH.path  = parsed.gh.path  || GH.path;
+                  try { localStorage.setItem('tt_gh', JSON.stringify({token:GH.token,repo:GH.repo,path:GH.path})); } catch(e) {}
+                }
+              })
               .then(reload)
-              .then(function(){ toast('Restaurado do GitHub! OK'); });
+              .then(function(){ toast('Restaurado do GitHub! ✓'); });
           })
           .catch(function(e) { toast('Erro: '+e.message, 'e', 5000); })
           .finally(function() { restBtn.textContent = '\u2B07\uFE0F  Restaurar do GitHub'; restBtn.disabled = false; });
