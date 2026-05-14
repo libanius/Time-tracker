@@ -199,11 +199,34 @@ function dbAllPayments() { return dbAll('payments'); }
 function setPayment(projectId, amount) {
   return dbPut('payments', {projectId: projectId, amount: amount, updatedAt: new Date().toISOString()});
 }
+var SECRET_VALUE_RE = /(ghp_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|gho_[A-Za-z0-9_]{20,}|ghu_[A-Za-z0-9_]{20,}|ghs_[A-Za-z0-9_]{20,}|ghr_[A-Za-z0-9_]{20,})/g;
+var SECRET_TEST_RE = /(ghp_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|gho_[A-Za-z0-9_]{20,}|ghu_[A-Za-z0-9_]{20,}|ghs_[A-Za-z0-9_]{20,}|ghr_[A-Za-z0-9_]{20,})/;
+var SECRET_KEY_RE = /token|secret|password|authorization|api[_-]?key/i;
+function scrubSecrets(value, key) {
+  if (key && SECRET_KEY_RE.test(key)) return undefined;
+  if (typeof value === 'string') return value.replace(SECRET_VALUE_RE, '[removido]');
+  if (Array.isArray(value)) {
+    return value.map(function(item) { return scrubSecrets(item, ''); })
+      .filter(function(item) { return item !== undefined; });
+  }
+  if (value && typeof value === 'object') {
+    var out = {};
+    Object.keys(value).forEach(function(k) {
+      var clean = scrubSecrets(value[k], k);
+      if (clean !== undefined) out[k] = clean;
+    });
+    return out;
+  }
+  return value;
+}
+function backupContainsSecret(json) {
+  return SECRET_TEST_RE.test(json) || /"(?:token|secret|password|authorization|api[_-]?key)"\s*:/i.test(json);
+}
 function buildBackupObject(projects, events, payments) {
   var obj = {
-    projects: projects || [],
-    events: events || [],
-    payments: payments || [],
+    projects: scrubSecrets(projects || [], ''),
+    events: scrubSecrets(events || [], ''),
+    payments: scrubSecrets(payments || [], ''),
     v: 3,
     at: new Date().toISOString()
   };
@@ -1421,6 +1444,7 @@ function renderReports(main) {
   var expj = btn('btn bs', '\u2B07\uFE0F  Backup Completo', function() {
     Promise.all([dbAll('projects'), dbAll('events'), dbAll('payments')]).then(function(r) {
       var json = JSON.stringify(buildBackupObject(r[0], r[1], r[2]), null, 2);
+      if (backupContainsSecret(json)) { toast('Backup bloqueado: segredo detectado nos dados', 'e', 5000); return; }
       showModal(function(mo, close) {
         mo.appendChild(div('mtit', 'Backup Completo'));
         mo.appendChild(div('', '<div style="font-size:13px;color:var(--mu);margin-bottom:12px">'
@@ -2102,6 +2126,7 @@ function renderSettings(main) {
     bkNowBtn.textContent = 'Enviando...'; bkNowBtn.disabled = true;
     Promise.all([dbAll('projects'), dbAll('events'), dbAll('payments')]).then(function(r) {
       var json = JSON.stringify(buildBackupObject(r[0], r[1], r[2]), null, 2);
+      if (backupContainsSecret(json)) { toast('Backup bloqueado: segredo detectado nos dados', 'e', 5000); bkNowBtn.textContent = '\u2601\uFE0F  Fazer Backup Agora'; bkNowBtn.disabled = false; return; }
       var b64 = btoa(unescape(encodeURIComponent(json)));
       var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
       // First get current SHA (needed to update existing file)
