@@ -76,9 +76,9 @@
       "hourlyRateUsd": 28,
       "color": "#ff9ff3",
       "category": "",
-      "active": true,
+      "active": false,
       "createdAt": "2026-04-18T14:58:08.059Z",
-      "updatedAt": "2026-04-18T14:58:08.059Z"
+      "updatedAt": "2026-05-14T20:56:42.172Z"
     },
     {
       "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
@@ -98,7 +98,7 @@
       "category": "",
       "active": false,
       "createdAt": "2026-03-26T16:48:13.975Z",
-      "updatedAt": "2026-04-02T13:00:55.835Z"
+      "updatedAt": "2026-05-14T20:56:34.344Z"
     },
     {
       "id": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
@@ -107,8 +107,8 @@
       "color": "#ff6b6b",
       "category": "",
       "createdAt": "2026-02-28T23:30:00.000Z",
-      "updatedAt": "2026-03-06T01:22:09.199Z",
-      "active": false
+      "updatedAt": "2026-05-14T20:56:41.524Z",
+      "active": true
     },
     {
       "id": "f3098253-cd84-4ef3-bdb4-d7be9b26b683",
@@ -218,6 +218,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-03T12:04:05.015Z"
+    },
+    {
+      "id": "116dd85d-c12e-4134-9a88-c1174ec42499",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-14T20:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T21:01:55.582Z"
     },
     {
       "id": "13d91aa5-52ae-45c0-bb74-0be0e72a8dfc",
@@ -756,6 +765,15 @@
       "createdAt": "2026-04-18T21:06:04.763Z"
     },
     {
+      "id": "5f61a61f-a30e-4dae-b009-c2a5f57aaa90",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-05-14T20:58:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T20:58:55.855Z"
+    },
+    {
       "id": "5fcd1e51-565d-4689-849f-a8f0a49cd72d",
       "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
       "type": "checkin",
@@ -904,6 +922,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-06T12:22:23.385Z"
+    },
+    {
+      "id": "7efda7d8-da7a-474e-91ca-2cb1c793bcd0",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-14T18:01:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T20:57:54.056Z"
     },
     {
       "id": "813ba9c7-5809-4e06-b380-a3ed232706f0",
@@ -1107,6 +1134,15 @@
       "createdAt": "2026-04-27T13:36:44.381Z"
     },
     {
+      "id": "a1fec8c2-7470-4f46-9208-3323c446f9a5",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkout",
+      "timestampISO": "2026-05-14T18:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T20:57:37.118Z"
+    },
+    {
       "id": "a3f898fe-b438-4451-9321-d04427076768",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -1157,6 +1193,15 @@
       "timestampISO": "2026-03-10T12:42:27.175Z",
       "source": "manual",
       "createdAt": "2026-03-10T12:42:27.176Z"
+    },
+    {
+      "id": "b535b016-cac7-4a41-b9ba-05a6809e9952",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkin",
+      "timestampISO": "2026-05-14T13:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T20:57:12.723Z"
     },
     {
       "id": "b607d910-1039-4c89-9215-fc20d0a16663",
@@ -1355,6 +1400,15 @@
       "timestampISO": "2026-03-19T21:52:32.255Z",
       "source": "manual",
       "createdAt": "2026-03-19T21:52:32.255Z"
+    },
+    {
+      "id": "dac7fdd6-d071-403c-80fd-8d8d10c5d451",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-05-14T20:01:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-14T20:58:19.066Z"
     },
     {
       "id": "dd32e6e0-fec5-4e18-8efa-095116019dab",
@@ -1605,7 +1659,7 @@
   ],
   "payments": [],
   "v": 3,
-  "at": "2026-05-14T18:03:47.782Z",
+  "at": "2026-05-14T21:02:24.348Z",
   "gh": {
     "repo": "Libanius/Time-tracker",
     "path": "timetrack-backup.json"
