@@ -21,6 +21,16 @@
       "updatedAt": "2026-03-19T01:27:20.032Z"
     },
     {
+      "id": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "name": "Chris Hollywood",
+      "hourlyRateUsd": 28,
+      "color": "#ff9f43",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-05-18T20:09:50.788Z",
+      "updatedAt": "2026-05-18T20:09:50.788Z"
+    },
+    {
       "id": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
       "name": "Warehouse Alessandra",
       "hourlyRateUsd": 28,
@@ -41,6 +51,16 @@
       "updatedAt": "2026-03-25T13:06:55.514Z"
     },
     {
+      "id": "587360a5-a390-4249-bcb3-be83753bdf31",
+      "name": "Keith",
+      "hourlyRateUsd": 28,
+      "color": "#00e5a0",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-05-20T11:51:00.871Z",
+      "updatedAt": "2026-05-20T11:51:00.871Z"
+    },
+    {
       "id": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
       "name": "Meta",
       "hourlyRateUsd": 28,
@@ -56,9 +76,9 @@
       "hourlyRateUsd": 28,
       "color": "#4ecdc4",
       "category": "",
-      "active": true,
+      "active": false,
       "createdAt": "2026-05-13T20:06:15.227Z",
-      "updatedAt": "2026-05-13T20:06:15.227Z"
+      "updatedAt": "2026-05-17T17:40:48.587Z"
     },
     {
       "id": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
@@ -81,14 +101,34 @@
       "updatedAt": "2026-05-14T20:56:42.172Z"
     },
     {
+      "id": "b18986bb-4016-41e7-9fbe-1ad89ff496b3",
+      "name": "Copper City",
+      "hourlyRateUsd": 28,
+      "color": "#ff9ff3",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-05-17T17:40:33.619Z",
+      "updatedAt": "2026-05-20T11:51:06.322Z"
+    },
+    {
       "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "name": "Greg",
       "hourlyRateUsd": 28,
       "color": "#00e5a0",
       "category": "",
       "createdAt": "2026-02-28T23:30:00.000Z",
-      "updatedAt": "2026-04-09T13:04:05.531Z",
-      "active": true
+      "updatedAt": "2026-05-18T20:09:29.966Z",
+      "active": false
+    },
+    {
+      "id": "d90e4dd6-b193-4e76-9c46-1cc46657011d",
+      "name": "Meeting",
+      "hourlyRateUsd": 28,
+      "color": "#54a0ff",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-05-18T12:16:32.320Z",
+      "updatedAt": "2026-05-18T12:16:43.966Z"
     },
     {
       "id": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
@@ -116,9 +156,9 @@
       "hourlyRateUsd": 28,
       "color": "#ffb347",
       "category": "",
-      "active": true,
+      "active": false,
       "createdAt": "2026-05-06T15:48:00.010Z",
-      "updatedAt": "2026-05-06T15:48:00.010Z"
+      "updatedAt": "2026-05-17T17:40:46.124Z"
     },
     {
       "id": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
@@ -218,6 +258,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-03T12:04:05.015Z"
+    },
+    {
+      "id": "116a8c11-c404-4a28-808c-cf7aa5476993",
+      "projectId": "d90e4dd6-b193-4e76-9c46-1cc46657011d",
+      "type": "checkin",
+      "timestampISO": "2026-05-18T12:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-18T12:16:59.217Z"
     },
     {
       "id": "116dd85d-c12e-4134-9a88-c1174ec42499",
@@ -329,6 +378,15 @@
       "timestampISO": "2026-03-14T21:01:38.364Z",
       "source": "manual",
       "createdAt": "2026-03-14T21:01:38.365Z"
+    },
+    {
+      "id": "237aa826-b2a8-418d-86c0-4c3a216b3864",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-05-19T12:26:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-19T18:26:29.218Z"
     },
     {
       "id": "239ccb0c-54a7-4656-9f4e-b84ab61b55e8",
@@ -483,6 +541,15 @@
       "createdAt": "2026-03-05T18:55:07.196Z"
     },
     {
+      "id": "39eb8ca7-4910-484e-92b4-1df8d2b7336b",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-05-18T13:11:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-18T20:09:57.389Z"
+    },
+    {
       "id": "3a91b3c0-87d9-4095-b347-40a1bc282687",
       "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
       "type": "checkin",
@@ -633,6 +700,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-08T22:35:59.163Z"
+    },
+    {
+      "id": "499a54a1-0883-4fff-962c-e5a28d03143c",
+      "projectId": "b18986bb-4016-41e7-9fbe-1ad89ff496b3",
+      "type": "checkout",
+      "timestampISO": "2026-05-15T22:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-17T17:41:58.218Z"
     },
     {
       "id": "4c731816-1198-4586-87a6-1bea335d8b78",
@@ -881,6 +957,15 @@
       "createdAt": "2026-04-09T22:10:58.795Z"
     },
     {
+      "id": "777be4f4-831a-4b83-a5ed-1ddf897aac63",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-05-19T20:49:16.525Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-19T20:49:16.526Z"
+    },
+    {
       "id": "78482bd3-ac41-4941-9558-373f2fc67861",
       "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
       "type": "checkout",
@@ -958,6 +1043,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-03-27T12:55:12.303Z"
+    },
+    {
+      "id": "8556803b-fac6-4c75-a1f6-1520b621ff9f",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-15T12:58:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-17T17:37:53.260Z"
     },
     {
       "id": "8573e097-f944-417e-9592-0377108d0e92",
@@ -1099,6 +1193,15 @@
       "createdAt": "2026-04-10T21:36:18.518Z"
     },
     {
+      "id": "9b58448b-1099-49ff-a8c7-44c93c3ec488",
+      "projectId": "b18986bb-4016-41e7-9fbe-1ad89ff496b3",
+      "type": "checkin",
+      "timestampISO": "2026-05-15T19:50:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-17T17:41:30.965Z"
+    },
+    {
       "id": "9dec0bed-c50e-4067-9ab0-1b982ccd5264",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
@@ -1185,6 +1288,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-20T21:36:04.516Z"
+    },
+    {
+      "id": "a824f403-9bba-4324-a839-0124ea91cafa",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-15T19:10:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-17T17:38:47.593Z"
     },
     {
       "id": "b03da97f-9de7-436d-b788-11e119294b86",
@@ -1481,6 +1593,15 @@
       "createdAt": "2026-03-25T21:13:06.571Z"
     },
     {
+      "id": "e7d328d6-e202-4a15-b5ea-3407f147344e",
+      "projectId": "d90e4dd6-b193-4e76-9c46-1cc46657011d",
+      "type": "checkout",
+      "timestampISO": "2026-05-18T13:10:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-18T20:09:57.385Z"
+    },
+    {
       "id": "e7db19b5-9505-4081-9ca0-99226184f9ef",
       "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
       "type": "checkin",
@@ -1488,6 +1609,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-02T18:08:52.601Z"
+    },
+    {
+      "id": "ebc36e35-3167-40c1-9018-813f0f9bbc76",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-05-18T21:30:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-19T12:39:03.299Z"
     },
     {
       "id": "ecb86291-6e4a-4f4b-afc5-07214efd2471",
@@ -1659,7 +1789,7 @@
   ],
   "payments": [],
   "v": 3,
-  "at": "2026-05-14T21:02:24.348Z",
+  "at": "2026-05-20T11:51:21.286Z",
   "gh": {
     "repo": "Libanius/Time-tracker",
     "path": "timetrack-backup.json"
