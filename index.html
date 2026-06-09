@@ -2362,16 +2362,21 @@ function renderSettings(main) {
       yesL: 'Restaurar',
       onYes: function() {
         restBtn.textContent = 'Buscando...'; restBtn.disabled = true;
-        var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
-                // Use raw download URL to avoid base64 issues
-        ghFetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3.raw'}})
+        var filePath = GH.path || 'timetrack-backup.json';
+        var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + filePath;
+        ghFetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
           .then(function(res){
-            if(!res.ok) throw new Error('Arquivo n\u00E3o encontrado ('+res.status+')');
-            return res.text();
+            if (res.status === 404) throw new Error('Arquivo "' + filePath + '" n\u00E3o encontrado em "' + GH.repo + '". Verifique o caminho em Configurar.');
+            if (!res.ok) throw new Error('GitHub retornou erro ' + res.status);
+            return res.json();
           })
-          .then(function(text) {
+          .then(function(data) {
+            if (!data.content) throw new Error('Resposta inesperada do GitHub (sem content)');
+            var b64 = data.content.replace(/\n/g, '');
+            var text;
+            try { text = decodeURIComponent(escape(atob(b64))); } catch(e) { text = atob(b64); }
             var parsed = JSON.parse(text);
-            if (!parsed.projects || !parsed.events) throw new Error('Formato inv\u00E1lido');
+            if (!parsed.projects || !parsed.events) throw new Error('Arquivo n\u00E3o \u00E9 um backup v\u00E1lido do TimeTrack');
             return importBackupData(parsed)
               .then(function() {
                 if (parsed.gh) {
@@ -2383,13 +2388,53 @@ function renderSettings(main) {
               .then(reload)
               .then(function(){ toast('Restaurado do GitHub! ✓'); });
           })
-          .catch(function(e) { toast('Erro: '+e.message, 'e', 5000); })
+          .catch(function(e) { toast('Erro: '+e.message, 'e', 7000); })
           .finally(function() { restBtn.textContent = '\u2B07\uFE0F  Restaurar do GitHub'; restBtn.disabled = false; });
       }
     });
   });
   restBtn.style.marginTop = '8px';
   ghCard.appendChild(restBtn);
+
+  var listBtn = btn('btn bs bfull', '📂  Ver arquivos no repositório', function() {
+    if (!GH.token || !GH.repo) { toast('Configure o GitHub primeiro', 'w'); return; }
+    listBtn.textContent = 'Buscando...'; listBtn.disabled = true;
+    ghFetch('https://api.github.com/repos/' + GH.repo + '/contents/', {
+      headers: {'Authorization': 'Bearer ' + GH.token, 'Accept': 'application/vnd.github.v3+json'}
+    })
+    .then(function(res) {
+      listBtn.textContent = '📂  Ver arquivos no repositório'; listBtn.disabled = false;
+      if (!res.ok) { toast('Erro ' + res.status + ' ao listar arquivos', 'e'); return; }
+      return res.json().then(function(files) {
+        var jsonFiles = files.filter(function(f) { return f.name.endsWith('.json'); });
+        var msg = jsonFiles.length
+          ? 'Arquivos JSON no repo:
+' + jsonFiles.map(function(f){ return '• ' + f.name; }).join('
+')
+          : 'Nenhum arquivo .json encontrado na raiz do repositório.';
+        showModal(function(mo, close) {
+          mo.appendChild(div('mtit', 'Arquivos no repositório'));
+          var info = div(''); info.style.cssText = 'font-size:13px;color:var(--mu);margin-bottom:16px;line-height:1.8;font-family:monospace;';
+          info.innerHTML = jsonFiles.length
+            ? jsonFiles.map(function(f){
+                var isCurrent = f.name === (GH.path || 'timetrack-backup.json');
+                return '<div style="padding:6px 0;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:8px">' +
+                  '<span style="flex:1;color:' + (isCurrent?'var(--ac)':'var(--tx)') + '">' + esc(f.name) + '</span>' +
+                  (isCurrent ? '<span style="font-size:11px;color:var(--ac)">✓ configurado</span>' : '') +
+                  '<button onclick="GH.path='' + esc(f.name) + '';try{localStorage.setItem('tt_gh',JSON.stringify({token:GH.token,repo:GH.repo,path:GH.path}))}catch(e){};this.closest('.modal').querySelector('button').click();toast('Caminho atualizado: ' + esc(f.name) + '')" ' +
+                  'style="padding:4px 10px;border-radius:6px;border:none;background:var(--ac2);color:#fff;font-size:11px;cursor:pointer;font-family:inherit">Usar este</button>' +
+                  '</div>';
+              }).join('')
+            : '<span>Nenhum arquivo .json encontrado na raiz do repositório.</span>';
+          mo.appendChild(info);
+          mo.appendChild(btn('btn bp bfull', 'Fechar', close));
+        });
+      });
+    })
+    .catch(function() { listBtn.textContent = '📂  Ver arquivos no repositório'; listBtn.disabled = false; toast('Erro ao conectar ao GitHub', 'e'); });
+  });
+  listBtn.style.marginTop = '6px';
+  ghCard.appendChild(listBtn);
   main.appendChild(ghCard);
 
   // Atualizar App
