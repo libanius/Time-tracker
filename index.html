@@ -633,7 +633,16 @@ function openEditEvent(ev) {
         source: ev.source || 'manual',
         createdAt: ev.createdAt || new Date().toISOString()
       };
-      dbPut('events', updated).then(reload).then(function() { close(); toast('Atualizado OK'); });
+      function doSave() { dbPut('events', updated).then(reload).then(function() { close(); toast('Atualizado OK'); }); }
+      if (psel.value !== ev.projectId) {
+        var op = projById(ev.projectId), np = projById(psel.value);
+        showConfirm({
+          title: 'Trocar projeto',
+          msg: 'Trocar de "' + (op ? op.name : '?') + '" para "' + (np ? np.name : '?') + '"?',
+          yesL: 'Confirmar',
+          onYes: doSave
+        });
+      } else { doSave(); }
     });
     saveb.style.flex = '1';
     row.appendChild(delb); row.appendChild(saveb); mo.appendChild(row);
@@ -726,7 +735,16 @@ function openEditSession(s) {
           source: coEv.source || 'manual', createdAt: coEv.createdAt || new Date().toISOString()
         }));
       }
-      Promise.all(saves).then(reload).then(function() { close(); toast('Atualizado OK'); });
+      function doSave() { Promise.all(saves).then(reload).then(function() { close(); toast('Atualizado OK'); }); }
+      if (psel.value !== ciEv.projectId) {
+        var op = projById(ciEv.projectId), np = projById(psel.value);
+        showConfirm({
+          title: 'Trocar projeto',
+          msg: 'Trocar de "' + (op ? op.name : '?') + '" para "' + (np ? np.name : '?') + '"?',
+          yesL: 'Confirmar',
+          onYes: doSave
+        });
+      } else { doSave(); }
     });
     saveb.style.flex = '1';
     row.appendChild(delb); row.appendChild(saveb); mo.appendChild(row);
@@ -1059,6 +1077,14 @@ function renderForm(main) {
     bci.className = 'btn bsm ' + (t === 'checkin' ? 'bp' : 'bs');
     bco.className = 'btn bsm ' + (t === 'checkout' ? 'bp' : 'bs');
     rebuildProjSel();
+    if (t === 'checkout') {
+      var openAll = getOpenAny();
+      var openSess = openAll.filter(function(s) { return psel && s.projectId === psel.value; })[0] || openAll[0];
+      if (openSess) {
+        var sessDate = dStr(new Date(openSess.checkin));
+        if (sessDate !== today()) { applyDate(sessDate); }
+      }
+    }
   }
   bci.onclick = function() { setType('checkin'); };
   bco.onclick = function() { setType('checkout'); };
@@ -1122,6 +1148,7 @@ function renderForm(main) {
   dIW.appendChild(dInp);
   function applyDate(val) {
     F.date = val || today();
+    dInp.value = F.date;
     var isO = F.date !== today() && F.date !== yestStr;
     btd.className = 'btn bsm ' + (F.date === today() ? 'bp' : 'bs');
     byt.className = 'btn bsm ' + (F.date === yestStr ? 'bp' : 'bs');
