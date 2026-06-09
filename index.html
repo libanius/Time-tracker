@@ -2217,32 +2217,45 @@ function renderSettings(main) {
       mo.appendChild(testStatus);
 
       var testBtn = btn('btn bs bfull', '🔌  Testar Conexão', function() {
-        var tok = ti.value.trim(), repo = ri.value.trim();
+        // Strip ALL whitespace and invisible characters from token
+        var tok = ti.value.replace(/[\s\u200B-\u200D\uFEFF]/g, '');
+        var repo = ri.value.trim();
+        ti.value = tok;
         if (!tok) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Informe o token.</span>'; return; }
-        if (!repo) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Informe o repositório.</span>'; return; }
+        if (!repo) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Informe o repositório (usuario/repo).</span>'; return; }
+        if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Repositório inválido. Use o formato: usuario/repo</span>'; return; }
         testBtn.textContent = 'Testando...'; testBtn.disabled = true;
-        testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--mu)">Verificando...</span>';
-        fetch('https://api.github.com/repos/' + repo, {
-          headers: {'Authorization': 'Bearer ' + tok, 'Accept': 'application/vnd.github.v3+json'}
-        })
-        .then(function(res) {
-          testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
-          if (res.status === 200) {
-            testStatus.innerHTML = '<span style="color:var(--ac)">✓ Conectado! Token e repositório válidos.</span>';
-          } else if (res.status === 401) {
-            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Token inválido ou expirado. Gere um novo em github.com → Settings → Developer settings.</span>';
-          } else if (res.status === 403) {
-            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Sem permissão. O token precisa do escopo <b>repo</b>.</span>';
-          } else if (res.status === 404) {
-            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Repositório não encontrado. Verifique "usuario/repo".</span>';
-          } else {
-            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Erro ' + res.status + '. Verifique os dados.</span>';
-          }
-        })
-        .catch(function() {
-          testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
-          testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Sem conexão com o GitHub. Verifique Wi-Fi ou dados móveis.</span>';
-        });
+        testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--mu)">1/2 Verificando internet...</span>';
+        // Step 1: test basic GitHub reachability (no auth, no CORS preflight)
+        fetch('https://api.github.com', {method: 'GET'})
+          .then(function() {
+            testStatus.innerHTML = '<span style="color:var(--mu)">2/2 Verificando token e repositório...</span>';
+            // Step 2: test with auth
+            return fetch('https://api.github.com/repos/' + repo, {
+              headers: {'Authorization': 'Bearer ' + tok, 'Accept': 'application/vnd.github.v3+json'}
+            });
+          })
+          .then(function(res) {
+            testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
+            if (res.status === 200) {
+              testStatus.innerHTML = '<span style="color:var(--ac)">✓ Conectado! Token e repositório válidos.</span>';
+            } else if (res.status === 401) {
+              testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Token inválido ou expirado.<br>Gere um novo: github.com → Settings → Developer settings → Tokens (classic).</span>';
+            } else if (res.status === 403) {
+              testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Sem permissão. O token precisa do escopo <b>repo</b>.</span>';
+            } else if (res.status === 404) {
+              testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Repositório "' + esc(repo) + '" não encontrado.<br>Verifique se o nome está correto e o repositório existe.</span>';
+            } else {
+              res.text().then(function(t) {
+                testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Erro HTTP ' + res.status + ': ' + esc(t.slice(0,120)) + '</span>';
+              });
+            }
+          })
+          .catch(function(e) {
+            testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
+            var msg = e && e.message ? e.message : String(e);
+            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Falha de rede: ' + esc(msg) + '<br><span style="font-size:11px;color:var(--mu)">Tente abrir o app no Safari (não pelo ícone da home) e repita o teste.</span></span>';
+          });
       });
       testBtn.style.marginBottom = '10px';
       mo.appendChild(testBtn);
