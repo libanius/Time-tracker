@@ -2380,6 +2380,34 @@ function renderSettings(main) {
   updCard.appendChild(updBtn);
   main.appendChild(updCard);
 
+  var appUpdCard = div('card');
+  appUpdCard.appendChild(div('ct', 'Recarregar App'));
+  var appUpdNote = div('');
+  appUpdNote.style.cssText = 'font-size:12px;color:var(--mu);margin-bottom:12px;line-height:1.5;';
+  appUpdNote.textContent = 'Limpa o cache do navegador e puxa a versão mais recente do servidor. Use após publicar uma atualização no GitHub.';
+  appUpdCard.appendChild(appUpdNote);
+  var appUpdBtn = btn('btn bp bfull', '\uD83D\uDD04  Recarregar App Agora', function() {
+    appUpdBtn.textContent = 'Atualizando...';
+    appUpdBtn.disabled = true;
+    function doReload() {
+      var url = location.href.split('?')[0] + '?v=' + Date.now();
+      location.replace(url);
+    }
+    var chain = ('caches' in window)
+      ? caches.keys().then(function(keys) { return Promise.all(keys.map(function(k) { return caches.delete(k); })); })
+      : Promise.resolve();
+    if ('serviceWorker' in navigator) {
+      chain = chain.then(function() {
+        return navigator.serviceWorker.getRegistrations().then(function(regs) {
+          return Promise.all(regs.map(function(r) { return r.unregister(); }));
+        });
+      });
+    }
+    chain.then(doReload).catch(doReload);
+  });
+  appUpdCard.appendChild(appUpdBtn);
+  main.appendChild(appUpdCard);
+
   main.appendChild(div('card',
     '<div class="ct">Sobre</div>' +
     '<div style="font-size:13px;color:var(--mu);line-height:1.9">' +
