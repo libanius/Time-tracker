@@ -641,6 +641,99 @@ function openEditEvent(ev) {
   });
 }
 
+function openEditSession(s) {
+  var ciEv = S.events.filter(function(e) { return e.id === s.checkinId; })[0];
+  var coEv = s.checkoutId ? S.events.filter(function(e) { return e.id === s.checkoutId; })[0] : null;
+  if (!ciEv) return;
+  showModal(function(mo, close) {
+    var origCi = new Date(ciEv.timestampISO);
+    mo.appendChild(div('mtit', 'Editar Sessão'));
+
+    // Project
+    var fg0 = div('fg'); fg0.appendChild(mkLbl('Projeto'));
+    var sw0 = div('sel-wrap');
+    var psel = document.createElement('select');
+    S.projects.forEach(function(p) {
+      var o = document.createElement('option');
+      o.value = p.id;
+      o.textContent = p.name + ' (' + fM(p.hourlyRateUsd) + '/h)';
+      if (p.id === ciEv.projectId) o.selected = true;
+      psel.appendChild(o);
+    });
+    sw0.appendChild(psel); fg0.appendChild(sw0); mo.appendChild(fg0);
+
+    // Date
+    var fg1 = div('fg'); fg1.appendChild(mkLbl('Data'));
+    var dI = el('input', ''); dI.type = 'date';
+    dI.value = dStr(origCi); dI.max = today();
+    fg1.appendChild(dI); mo.appendChild(fg1);
+
+    // Checkin time
+    var fg2 = div('fg'); fg2.appendChild(mkLbl('Entrada'));
+    var ciI = el('input', ''); ciI.type = 'time';
+    ciI.value = pad(origCi.getHours()) + ':' + pad(origCi.getMinutes());
+    fg2.appendChild(ciI); mo.appendChild(fg2);
+
+    // Checkout time
+    var coI = null;
+    if (coEv) {
+      var origCo = new Date(coEv.timestampISO);
+      var fg3 = div('fg'); fg3.appendChild(mkLbl('Saída'));
+      coI = el('input', ''); coI.type = 'time';
+      coI.value = pad(origCo.getHours()) + ':' + pad(origCo.getMinutes());
+      fg3.appendChild(coI); mo.appendChild(fg3);
+    }
+
+    // Note
+    var fgN = div('fg'); fgN.appendChild(mkLbl('Nota (opcional)'));
+    var noteI = el('input', ''); noteI.type = 'text';
+    noteI.placeholder = 'O que voce fez?';
+    noteI.value = ciEv.note || '';
+    fgN.appendChild(noteI); mo.appendChild(fgN);
+
+    var row = div('brow');
+    var delb = btn('btn br', 'Apagar', function() {
+      showConfirm({
+        title: 'Apagar sessão',
+        msg: 'Entrada e saída serão removidas.',
+        yesL: 'Apagar',
+        onYes: function() {
+          var dels = [dbDel('events', ciEv.id)];
+          if (coEv) dels.push(dbDel('events', coEv.id));
+          Promise.all(dels).then(reload).then(function() { close(); toast('Removido'); });
+        }
+      });
+    });
+    var saveb = btn('btn bp', 'Salvar', function() {
+      if (!ciI.value) { toast('Informe o horário de entrada', 'w'); return; }
+      var ciParts = ciI.value.split(':');
+      var ciDate = new Date(dI.value + 'T00:00:00');
+      ciDate.setHours(+ciParts[0], +ciParts[1], 0, 0);
+      if (ciDate > new Date()) { toast('Horário de entrada no futuro', 'w'); return; }
+      var saves = [dbPut('events', {
+        id: ciEv.id, projectId: psel.value, type: 'checkin',
+        timestampISO: ciDate.toISOString(), note: noteI.value.trim(),
+        source: ciEv.source || 'manual', createdAt: ciEv.createdAt || new Date().toISOString()
+      })];
+      if (coEv && coI) {
+        var coParts = coI.value.split(':');
+        var coDate = new Date(dI.value + 'T00:00:00');
+        coDate.setHours(+coParts[0], +coParts[1], 0, 0);
+        if (coDate <= ciDate) { toast('Saída deve ser depois da entrada', 'w'); return; }
+        saves.push(dbPut('events', {
+          id: coEv.id, projectId: psel.value, type: 'checkout',
+          timestampISO: coDate.toISOString(), note: coEv.note || '',
+          source: coEv.source || 'manual', createdAt: coEv.createdAt || new Date().toISOString()
+        }));
+      }
+      Promise.all(saves).then(reload).then(function() { close(); toast('Atualizado OK'); });
+    });
+    saveb.style.flex = '1';
+    row.appendChild(delb); row.appendChild(saveb); mo.appendChild(row);
+    setTimeout(function() { ciI.focus(); }, 200);
+  });
+}
+
 /* =================================
    NAVIGATION
 ================================= */
@@ -662,7 +755,7 @@ function renderNav() {
     tabs.appendChild(b);
   });
   nav.appendChild(tabs);
-  nav.appendChild(div('nav-ver', 'TimeTrack v7.10'));
+  nav.appendChild(div('nav-ver', 'TimeTrack v7.11'));
 }
 function startTimer() {
   stopTimer();
@@ -1639,6 +1732,14 @@ function renderReports(main) {
         sr.appendChild(info);
         var valEl=div(''); valEl.innerHTML='<div style="font-size:12px;font-family:monospace;color:var(--ac)">'+fM(cV(s.durationMs, pt.project.hourlyRateUsd))+'</div>';
         sr.appendChild(valEl);
+        var editBtn = el('button','');
+        editBtn.textContent = '✏';
+        editBtn.title = 'Editar sessão';
+        editBtn.style.cssText = 'background:none;border:none;color:var(--mu);font-size:13px;cursor:pointer;padding:4px 2px;opacity:.6;flex-shrink:0;';
+        editBtn.onmouseover = function(){ this.style.opacity='1'; this.style.color='var(--ac)'; };
+        editBtn.onmouseout = function(){ this.style.opacity='.6'; this.style.color='var(--mu)'; };
+        (function(sess){ editBtn.onclick = function(e){ e.stopPropagation(); openEditSession(sess); }; })(s);
+        sr.appendChild(editBtn);
         detail.appendChild(sr);
       });
     });
@@ -2282,7 +2383,7 @@ function renderSettings(main) {
   main.appendChild(div('card',
     '<div class="ct">Sobre</div>' +
     '<div style="font-size:13px;color:var(--mu);line-height:1.9">' +
-    '<b style="color:var(--tx)">TimeTrack v7.10</b><br>' +
+    '<b style="color:var(--tx)">TimeTrack v7.11</b><br>' +
     '100% local e offline.<br>' +
     'Dados armazenados no seu iPhone.<br><br>' +
     '<span style="font-family:monospace;font-size:11px">IndexedDB \u00B7 Offline-first</span></div>'
