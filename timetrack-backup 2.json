@@ -1,0 +1,1608 @@
+{
+  "projects": [
+    {
+      "id": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "name": "Lindsay",
+      "hourlyRateUsd": 28,
+      "color": "#4ecdc4",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-03-10T12:42:15.987Z",
+      "updatedAt": "2026-04-18T14:58:18.475Z"
+    },
+    {
+      "id": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "name": "Warehouse - Retirar Madeiras",
+      "hourlyRateUsd": 28,
+      "color": "#ff9f43",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-03-18T21:12:40.108Z",
+      "updatedAt": "2026-03-19T01:27:20.032Z"
+    },
+    {
+      "id": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "name": "Warehouse Alessandra",
+      "hourlyRateUsd": 28,
+      "color": "#ffb347",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-06T01:22:08.018Z",
+      "active": false
+    },
+    {
+      "id": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "name": "Ritholtz",
+      "hourlyRateUsd": 28,
+      "color": "#54a0ff",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-03-19T18:12:44.458Z",
+      "updatedAt": "2026-03-25T13:06:55.514Z"
+    },
+    {
+      "id": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "name": "Meta",
+      "hourlyRateUsd": 28,
+      "color": "#00e5a0",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-04-02T13:00:42.928Z",
+      "updatedAt": "2026-04-29T14:34:51.381Z"
+    },
+    {
+      "id": "6c10e611-8002-4236-818c-d1012d1ae52b",
+      "name": "Jerry",
+      "hourlyRateUsd": 28,
+      "color": "#4ecdc4",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-05-13T20:06:15.227Z",
+      "updatedAt": "2026-05-13T20:06:15.227Z"
+    },
+    {
+      "id": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "name": "Alan Freudenstein",
+      "hourlyRateUsd": 28,
+      "color": "#ff6b6b",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-04-29T14:34:48.154Z",
+      "updatedAt": "2026-04-29T14:34:48.154Z"
+    },
+    {
+      "id": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "name": "Warehouse/Office",
+      "hourlyRateUsd": 28,
+      "color": "#ff9ff3",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-04-18T14:58:08.059Z",
+      "updatedAt": "2026-04-18T14:58:08.059Z"
+    },
+    {
+      "id": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "name": "Greg",
+      "hourlyRateUsd": 28,
+      "color": "#00e5a0",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-04-09T13:04:05.531Z",
+      "active": true
+    },
+    {
+      "id": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "name": "Augusto’s House",
+      "hourlyRateUsd": 28,
+      "color": "#ff9f43",
+      "category": "",
+      "active": false,
+      "createdAt": "2026-03-26T16:48:13.975Z",
+      "updatedAt": "2026-04-02T13:00:55.835Z"
+    },
+    {
+      "id": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "name": "Warehouse- Augusto",
+      "hourlyRateUsd": 28,
+      "color": "#ff6b6b",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-03-06T01:22:09.199Z",
+      "active": false
+    },
+    {
+      "id": "f3098253-cd84-4ef3-bdb4-d7be9b26b683",
+      "name": "Lisa",
+      "hourlyRateUsd": 28,
+      "color": "#ffb347",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-05-06T15:48:00.010Z",
+      "updatedAt": "2026-05-06T15:48:00.010Z"
+    },
+    {
+      "id": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "name": "Sujata Bathia - Coral Spring",
+      "hourlyRateUsd": 28,
+      "color": "#7c6bff",
+      "category": "",
+      "createdAt": "2026-02-28T23:30:00.000Z",
+      "updatedAt": "2026-05-06T15:48:12.472Z",
+      "active": false
+    }
+  ],
+  "events": [
+    {
+      "id": "017cde97-974f-4540-a1c4-e54e5d1c0bfa",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T21:51:20.671Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T21:51:20.672Z"
+    },
+    {
+      "id": "01f00871-cb5e-4106-80e6-0965cb2fc99c",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-07T16:37:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-09T16:37:28.458Z"
+    },
+    {
+      "id": "02eab0ce-6a14-4e70-a3bd-e5ff65c9ebc4",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-31T16:20:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-31T21:38:26.289Z"
+    },
+    {
+      "id": "040d7bed-589e-42ce-84cc-d80d09105eb6",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-05-06T21:15:47.603Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T21:15:47.605Z"
+    },
+    {
+      "id": "0523cfee-a66b-4e3f-a886-9f20c556e6b5",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-27T07:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "054e1a37-e148-4ae8-b040-a4da145df256",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-06T19:05:05.734Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T19:05:05.736Z"
+    },
+    {
+      "id": "0578fe58-7df9-4fd6-86b5-ec9bdfea6360",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-02T13:30:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-02T13:42:35.126Z"
+    },
+    {
+      "id": "07d44d88-ef8b-44da-8b39-95fae2eaad3a",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkin",
+      "timestampISO": "2026-03-26T17:30:00.000Z",
+      "note": "Pintei banheiro, troquei válvula da dish, retirei a dish e reinstalei a dish. Arrumei a cortina / bucha e parafuso",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:24.251Z"
+    },
+    {
+      "id": "0903de67-f00a-4ec7-a249-5f8e4c89339a",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-06T13:03:28.496Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T13:03:28.498Z"
+    },
+    {
+      "id": "106007cb-be95-4ca6-960f-d03a7442edc7",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-03T12:04:05.014Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-03T12:04:05.015Z"
+    },
+    {
+      "id": "13d91aa5-52ae-45c0-bb74-0be0e72a8dfc",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T14:03:41.628Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T14:03:41.628Z"
+    },
+    {
+      "id": "14295e8a-00d5-4503-a806-fdb05044f471",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-25T21:29:32.264Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-25T21:29:32.266Z"
+    },
+    {
+      "id": "16ba3c17-b182-45d1-923e-850b9bcd212d",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkin",
+      "timestampISO": "2026-03-30T13:08:50.634Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-30T13:08:50.636Z"
+    },
+    {
+      "id": "16d728e4-dbe1-472c-a5ec-60be1c302c04",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-23T21:40:00.000Z",
+      "note": "Terminamos completamente: master bed room Pintura, master closet , master bath. Eu e o Fabrício. Amanhã tem que instalar shelves closet. Tenho que comprar fastners",
+      "source": "manual",
+      "createdAt": "2026-03-23T21:40:44.934Z"
+    },
+    {
+      "id": "1c86637f-493b-42db-8b70-65aadd0a1a6d",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-19T18:12:58.968Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T18:12:58.968Z"
+    },
+    {
+      "id": "1d0bb2c5-6446-4bb1-a20c-dd82bf303954",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-13T19:40:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-13T22:15:18.288Z"
+    },
+    {
+      "id": "1dafc69b-dbf2-419a-94cc-d41cdc44a512",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-15T18:29:48.245Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T18:29:48.248Z"
+    },
+    {
+      "id": "1e346f8b-665e-453a-8d85-68890b9efac7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-12T12:44:03.456Z",
+      "source": "manual",
+      "createdAt": "2026-03-12T12:44:03.457Z"
+    },
+    {
+      "id": "203ad149-f598-4357-9ad7-ea8ebf565824",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkin",
+      "timestampISO": "2026-03-20T17:09:19.814Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T17:09:19.829Z"
+    },
+    {
+      "id": "212fa23b-69d0-4092-9365-13842b808035",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-07T21:57:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-09T16:40:07.904Z"
+    },
+    {
+      "id": "23232aea-620f-47a4-a4c3-3867206f15b1",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-03T13:17:23.732Z",
+      "source": "manual",
+      "createdAt": "2026-03-03T13:17:23.734Z"
+    },
+    {
+      "id": "23401765-1aae-427b-9f9a-8c8ee9afb412",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-14T21:01:38.364Z",
+      "source": "manual",
+      "createdAt": "2026-03-14T21:01:38.365Z"
+    },
+    {
+      "id": "239ccb0c-54a7-4656-9f4e-b84ab61b55e8",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-04-18T13:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-18T14:58:41.218Z"
+    },
+    {
+      "id": "25db6ffd-82c8-4895-bd30-ee40bb43614a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-02T22:03:00.587Z",
+      "source": "manual",
+      "createdAt": "2026-03-02T22:03:00.588Z"
+    },
+    {
+      "id": "28756482-10bf-4d92-9840-a418f7426050",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-13T13:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-13T20:06:50.352Z"
+    },
+    {
+      "id": "2b29a5c7-1898-48c0-bada-c04d5690183e",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2b85f0ff-4f91-462c-a1f1-ba3dc929abaa",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-07T12:50:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-09T16:37:08.251Z"
+    },
+    {
+      "id": "2cbb0541-0c48-4c35-a5cb-057d666d07b5",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-02T15:04:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T17:04:42.067Z"
+    },
+    {
+      "id": "2d62cbf9-76e8-4712-89d9-e6fcb6493eb0",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-09T13:04:10.959Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-09T13:04:10.960Z"
+    },
+    {
+      "id": "2e92fca8-8eda-40b8-8c8f-765fd904e80f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-02-28T09:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2f29a54a-2270-46ef-8045-df796a60d66f",
+      "projectId": "efdd1da5-fab7-4d0c-aea0-9e5f0105c567",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T17:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "309014ec-552f-4fa5-a895-be380c953bc5",
+      "projectId": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "type": "checkin",
+      "timestampISO": "2026-03-18T21:12:50.906Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:12:50.907Z"
+    },
+    {
+      "id": "31ddb30b-ac74-4681-b88c-07eda6a79846",
+      "projectId": "2289ed54-c24f-47f3-861a-b7226f5e4478",
+      "type": "checkout",
+      "timestampISO": "2026-03-18T21:41:46.029Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:41:46.030Z"
+    },
+    {
+      "id": "33a3ec88-fd7c-48aa-8758-4eaeae07db7c",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-04-02T22:34:49.089Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T22:34:49.090Z"
+    },
+    {
+      "id": "3418f191-3d6d-4583-834a-a147a66ad512",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-09T22:02:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-09T22:14:58.315Z"
+    },
+    {
+      "id": "3465ab4c-b18c-4772-bfa8-7c0e84da3848",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-09T20:07:35.167Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-09T20:07:35.171Z"
+    },
+    {
+      "id": "353d119a-c3a9-4071-b0b7-0b34596a0642",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T15:15:15.007Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T15:15:15.008Z"
+    },
+    {
+      "id": "38e21fb2-2c05-4d02-a696-0b497d47e3c7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-02-28T16:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "392c7859-109b-4aad-b59f-ba2c4bee2926",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-15T21:50:54.397Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T21:50:54.399Z"
+    },
+    {
+      "id": "396898a0-594f-44c4-919c-50364d7ec4db",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-05T14:27:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:07.196Z"
+    },
+    {
+      "id": "3a91b3c0-87d9-4095-b347-40a1bc282687",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-25T09:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3ad46a21-a09f-41e7-942d-2f11003ec48b",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-25T12:45:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-25T12:51:28.581Z"
+    },
+    {
+      "id": "3c16ab4a-3886-4128-b331-53a237dec5be",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-25T13:07:00.482Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-25T13:07:00.483Z"
+    },
+    {
+      "id": "3cbae9fa-b27a-4061-94f4-646763bfc76f",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-31T21:38:29.808Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-31T21:38:29.808Z"
+    },
+    {
+      "id": "3cca6dd3-cc85-468e-9377-e1e6a7231e54",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T14:03:26.886Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T14:03:26.887Z"
+    },
+    {
+      "id": "3e30ab0f-78bc-428c-b906-1f8fe0721563",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-26T20:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "3ffc4150-244f-476e-a97c-efcbc24051df",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-06T22:33:40.567Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T22:33:40.570Z"
+    },
+    {
+      "id": "4058aa94-2b90-4723-9c9a-d569971bd1ad",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-11T21:39:29.505Z",
+      "source": "manual",
+      "createdAt": "2026-03-11T21:39:29.507Z"
+    },
+    {
+      "id": "410f2e28-fc5e-42e7-a775-375751d43492",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-02-24T13:50:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "4122f381-fe8e-44d0-b62f-e7397b5027f6",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-04T13:48:52.372Z",
+      "source": "manual",
+      "createdAt": "2026-03-04T13:48:52.375Z"
+    },
+    {
+      "id": "42f9fcc9-f8b4-425a-b455-157fb5c8a892",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkout",
+      "timestampISO": "2026-03-26T20:56:31.750Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:31.752Z"
+    },
+    {
+      "id": "439305c3-cd85-4921-ac5d-8dc033c5e211",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-04T13:06:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-04T14:06:59.077Z"
+    },
+    {
+      "id": "4461be75-a7df-4c1b-ad99-986daf4d438e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-13T12:30:52.230Z",
+      "source": "manual",
+      "createdAt": "2026-03-13T12:30:52.231Z"
+    },
+    {
+      "id": "45ecdb71-aac8-4942-8e41-b5477f102d96",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-30T21:03:48.606Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-30T21:03:48.606Z"
+    },
+    {
+      "id": "46bb0dcd-9538-41b9-ad3d-e9e082dc5e84",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-02-24T08:27:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "477c78db-0214-45c9-9272-800df4503098",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-14T17:30:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T00:16:58.648Z"
+    },
+    {
+      "id": "47cba1e8-8511-4327-8fa1-b82551278e7f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-20T12:34:53.645Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T12:34:53.647Z"
+    },
+    {
+      "id": "488d59ff-4bd3-4e74-8ec3-bfcc5b085937",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-08T22:35:59.162Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-08T22:35:59.163Z"
+    },
+    {
+      "id": "4c731816-1198-4586-87a6-1bea335d8b78",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-23T12:22:00.000Z",
+      "note": "Sujata decidiu no final de semana a cor dos trims. Augusto confirmou Sherwood Tan. Comprei na Benjamin Moore começo do dia.",
+      "source": "manual",
+      "createdAt": "2026-03-23T12:22:02.125Z"
+    },
+    {
+      "id": "4f5bfd6f-7d35-4b3f-9cb2-55d1dc4310f0",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-01T21:11:57.500Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-01T21:11:57.500Z"
+    },
+    {
+      "id": "506fc9d9-15bb-457a-97a4-c7204d101811",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-13T19:41:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-13T22:15:18.290Z"
+    },
+    {
+      "id": "50841b3b-264e-4749-9bf2-c417e977144b",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-10T18:16:48.906Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T18:16:48.907Z"
+    },
+    {
+      "id": "5138dfd5-f4c1-4c20-8b76-22bbd7cda33f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-24T21:47:23.292Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-24T21:47:23.293Z"
+    },
+    {
+      "id": "5418f031-d38d-4cb2-854a-d276ca3822e3",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-06T19:03:57.880Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-06T19:03:57.882Z"
+    },
+    {
+      "id": "54b50843-f256-41dd-9a4d-40535153307d",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-28T17:31:08.867Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-28T17:31:08.871Z"
+    },
+    {
+      "id": "54e505be-49f1-4370-9e8e-328718965bfd",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-03-05T16:00:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:29.319Z"
+    },
+    {
+      "id": "55007d4c-8fca-43de-bd40-2958bc1cdcd9",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkin",
+      "timestampISO": "2026-02-26T08:40:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "5558ffa3-07a5-4ebd-80ca-6cd406503f80",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-03T21:01:10.095Z",
+      "source": "manual",
+      "createdAt": "2026-03-03T21:01:10.097Z"
+    },
+    {
+      "id": "56a9e69b-8356-4cea-8cdf-e28883828cb5",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-31T16:20:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-31T21:38:26.294Z"
+    },
+    {
+      "id": "5843ee58-be08-4e77-8f5b-7a24495b9fad",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-04-27T20:59:56.616Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-27T20:59:56.618Z"
+    },
+    {
+      "id": "58ffc5b3-5cb9-47fd-ae86-7a7f89e9d55f",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-15T00:17:00.912Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T00:17:00.913Z"
+    },
+    {
+      "id": "5933cc9c-484a-451d-bc12-d951ae403cab",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T21:48:33.763Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T21:48:33.765Z"
+    },
+    {
+      "id": "5b8de9f3-a95c-4c47-8bba-5eb2778fed0d",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-18T21:06:04.762Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-18T21:06:04.763Z"
+    },
+    {
+      "id": "5fcd1e51-565d-4689-849f-a8f0a49cd72d",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-04-29T14:34:59.065Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-29T14:34:59.068Z"
+    },
+    {
+      "id": "60a243c0-c888-4cb3-93ca-f735c08c8de2",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-13T12:23:32.308Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-13T12:23:32.310Z"
+    },
+    {
+      "id": "62ea2221-66f9-444b-9d32-d7a1abe982fa",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-28T13:07:24.485Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-28T13:07:24.486Z"
+    },
+    {
+      "id": "640c3b31-0fed-4660-a4b4-67220fee290d",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-29T14:34:59.065Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-29T14:34:59.065Z"
+    },
+    {
+      "id": "6482a420-07a4-4b92-8e40-e78bbe8a92c8",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-04T22:06:33.064Z",
+      "source": "manual",
+      "createdAt": "2026-03-04T22:06:33.069Z"
+    },
+    {
+      "id": "65ff7bbe-b732-44da-b7e1-30d7da28ad0a",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-29T12:41:26.476Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-29T12:41:26.477Z"
+    },
+    {
+      "id": "67ae0c05-4dee-44bd-813a-e359b497ca33",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-16T20:54:12.736Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-16T20:54:12.738Z"
+    },
+    {
+      "id": "6b89255f-faf8-4d49-8873-ae0ebfcf63ba",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-27T21:53:08.889Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-27T21:53:08.891Z"
+    },
+    {
+      "id": "6b95c1b3-575b-4e07-9bdf-015f0ba3b495",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-28T17:31:08.867Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-28T17:31:08.868Z"
+    },
+    {
+      "id": "6fa77a17-dbec-4d05-8dd5-8269d37b8f82",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-21T21:22:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-21T21:22:35.888Z"
+    },
+    {
+      "id": "712d48c0-f9ec-4501-aa1f-eee5791220e0",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-13T20:06:55.066Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-13T20:06:55.066Z"
+    },
+    {
+      "id": "74750f0f-e656-4124-b859-28f49e25125b",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-09T22:10:58.794Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-09T22:10:58.795Z"
+    },
+    {
+      "id": "78482bd3-ac41-4941-9558-373f2fc67861",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-27T16:20:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "7b668be4-523e-4196-8205-4168db70eeeb",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-14T12:48:50.713Z",
+      "source": "manual",
+      "createdAt": "2026-03-14T12:48:50.715Z"
+    },
+    {
+      "id": "7c0a01f3-53ff-4eda-9261-bad65197dc73",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-04-08T17:12:05.231Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-08T17:12:05.235Z"
+    },
+    {
+      "id": "7c9ed1b4-5645-477a-a4ff-1ba34c125d81",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-20T19:50:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-20T20:10:52.972Z"
+    },
+    {
+      "id": "7e7a6ca3-7685-4a06-b1e4-186e65dee973",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-06T12:22:23.383Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-06T12:22:23.385Z"
+    },
+    {
+      "id": "813ba9c7-5809-4e06-b380-a3ed232706f0",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-04-18T16:57:49.399Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-18T16:57:49.401Z"
+    },
+    {
+      "id": "83bbe392-880c-4bf8-b0c4-78ccc6351891",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-03T22:24:56.179Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-03T22:24:56.179Z"
+    },
+    {
+      "id": "85093e17-37f6-4691-839d-2852bc1cbf10",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-27T12:55:12.302Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-27T12:55:12.303Z"
+    },
+    {
+      "id": "8573e097-f944-417e-9592-0377108d0e92",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-24T13:24:19.134Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-24T13:24:19.135Z"
+    },
+    {
+      "id": "867ada9c-0f17-4066-90e0-2e312b53afa7",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-05-06T19:05:05.734Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T19:05:05.740Z"
+    },
+    {
+      "id": "86f1f54e-0f78-45d3-8017-cecf4208c2bd",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-13T21:00:54.299Z",
+      "source": "manual",
+      "createdAt": "2026-03-13T21:00:54.300Z"
+    },
+    {
+      "id": "8855fb2b-4a8b-4d1a-a06d-f39c969e351e",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-04-29T20:57:37.337Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-29T20:57:37.338Z"
+    },
+    {
+      "id": "8a69eea0-bd03-4222-95bd-2d36c9e14e17",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-21T12:45:00.000Z",
+      "note": "Eu, Vilson e Fabrício. Terminamos parte cima, Master bath 1 mao, falta outra, closets master também. Deixamos pronto para limpeza",
+      "source": "manual",
+      "createdAt": "2026-03-21T12:45:18.813Z"
+    },
+    {
+      "id": "8b567e67-766b-46c6-9a25-ddbc0731499b",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-18T16:57:49.399Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-18T16:57:49.403Z"
+    },
+    {
+      "id": "8da1100d-ea99-4a3d-b14f-e29e370d7915",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-13T22:15:22.820Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-13T22:15:22.820Z"
+    },
+    {
+      "id": "900748d0-a49a-424b-9664-6339912ded70",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-28T21:13:08.638Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-28T21:13:08.638Z"
+    },
+    {
+      "id": "90739adc-5844-4404-ba72-5e808606a18b",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-08T12:30:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-08T13:16:31.453Z"
+    },
+    {
+      "id": "92a7625f-81f0-4bc8-bf45-9c83ab416244",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-18T13:46:48.465Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T13:46:48.466Z"
+    },
+    {
+      "id": "9312aa7e-dfb6-4537-80ba-86082e752fc3",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-06T13:29:02.063Z",
+      "source": "manual",
+      "createdAt": "2026-03-06T13:29:02.064Z"
+    },
+    {
+      "id": "95e90eb8-2675-49e4-b2c1-c3e1ad0e6c70",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-02T13:01:02.736Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T13:01:02.737Z"
+    },
+    {
+      "id": "96c5227d-8762-4bf2-8247-c1132a0c6a7a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-11T13:32:00.361Z",
+      "source": "manual",
+      "createdAt": "2026-03-11T13:32:00.362Z"
+    },
+    {
+      "id": "975cdf25-3f05-4ba0-a0ee-e20d65ac6bf1",
+      "projectId": "6c10e611-8002-4236-818c-d1012d1ae52b",
+      "type": "checkout",
+      "timestampISO": "2026-05-13T21:42:00.179Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-13T21:42:00.180Z"
+    },
+    {
+      "id": "98dfd43d-bf8a-47b2-9e47-31551d233729",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T16:44:22.026Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T16:44:22.026Z"
+    },
+    {
+      "id": "98f10673-a724-464f-92e0-1efb9a70c981",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-10T21:36:18.517Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-10T21:36:18.518Z"
+    },
+    {
+      "id": "9dec0bed-c50e-4067-9ab0-1b982ccd5264",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-19T12:30:44.894Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T12:30:44.895Z"
+    },
+    {
+      "id": "9fad995b-a21e-42a8-a946-778072d1fd48",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-08T17:12:05.231Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-08T17:12:05.232Z"
+    },
+    {
+      "id": "a132308f-dae2-4268-8fb9-c454dc864ca9",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-27T20:57:00.000Z",
+      "note": "Comprei tinta, peguei ó scaffolding e montei. Levei materiais para warehouse, coordenei mudanças e direcionamento com Augusto, orientei e dei suporte para Madson com tradução e etc. Jhon mostrou como que quer instalado as luzes. Andaime posicionado para Rodrigo eletricista. Comprei os metade dos baseboards e descarreguei na garagem.",
+      "source": "manual",
+      "createdAt": "2026-03-27T22:35:11.023Z"
+    },
+    {
+      "id": "a170fbc0-1e3d-4499-8e57-9a901bfad766",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-04-27T13:36:44.379Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-27T13:36:44.381Z"
+    },
+    {
+      "id": "a3f898fe-b438-4451-9321-d04427076768",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-18T21:12:09.267Z",
+      "source": "manual",
+      "createdAt": "2026-03-18T21:12:09.268Z"
+    },
+    {
+      "id": "a4e59aa3-d456-4bfd-ac63-b8f36c2fa35b",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-04-08T21:21:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-08T21:47:52.370Z"
+    },
+    {
+      "id": "a52358d8-13ea-47b9-ac7b-5b6ec1ab352f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-06T19:03:57.880Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-06T19:03:57.884Z"
+    },
+    {
+      "id": "a6e5cf20-fa13-4d36-becb-f7bf85112815",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-03-30T17:49:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-30T17:49:18.168Z"
+    },
+    {
+      "id": "a800d33e-4a68-40f7-bd9b-1ee173c1d209",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-20T21:36:04.515Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-20T21:36:04.516Z"
+    },
+    {
+      "id": "b03da97f-9de7-436d-b788-11e119294b86",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T12:42:27.175Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T12:42:27.176Z"
+    },
+    {
+      "id": "b607d910-1039-4c89-9215-fc20d0a16663",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T15:15:30.063Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T15:15:30.063Z"
+    },
+    {
+      "id": "b6262a2f-536b-452c-9f02-f79f069a3084",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-11T12:50:15.991Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-11T12:50:15.992Z"
+    },
+    {
+      "id": "b84e82e0-e2ae-42bc-b576-eea2ca973d6c",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-14T12:58:08.188Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-14T12:58:08.188Z"
+    },
+    {
+      "id": "b8794697-018b-4193-a5e1-528caac4d02c",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkout",
+      "timestampISO": "2026-05-04T19:24:40.964Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-04T19:24:40.967Z"
+    },
+    {
+      "id": "ba3e6721-d6a6-4a42-b9e6-e385cba102f6",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-06T15:48:18.420Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T15:48:18.420Z"
+    },
+    {
+      "id": "bbd037bd-7218-40c0-b374-0568f17475c0",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-05T20:54:00.019Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-05T20:54:00.020Z"
+    },
+    {
+      "id": "bc9ebf62-d5b8-45ea-8759-fcd9b1f4a5c6",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-27T20:59:56.616Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-27T20:59:56.620Z"
+    },
+    {
+      "id": "bf9e99bc-337b-4500-834b-9ff85d458b59",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-16T12:34:50.714Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T12:34:50.716Z"
+    },
+    {
+      "id": "c4de4003-7c06-4733-afbf-42bd0a25f8c6",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-01T20:00:40.049Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-01T20:00:40.050Z"
+    },
+    {
+      "id": "c4f7e06f-e96c-483e-8beb-1c5c785ca43c",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-17T21:42:01.588Z",
+      "source": "manual",
+      "createdAt": "2026-03-17T21:42:01.588Z"
+    },
+    {
+      "id": "c99b87ea-c6e1-463c-ac69-14b9a68daef9",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-31T13:08:57.229Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-31T13:08:57.230Z"
+    },
+    {
+      "id": "ca878306-dfc9-4f64-bc09-75bfe9567ec7",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-14T17:30:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T00:16:58.646Z"
+    },
+    {
+      "id": "cae688e4-746c-4d3c-bfa6-e0c36178b58a",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkout",
+      "timestampISO": "2026-03-20T20:33:29.361Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T20:33:29.366Z"
+    },
+    {
+      "id": "ce057980-b7d9-4e6f-ae6b-8ca5fa57e45a",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkin",
+      "timestampISO": "2026-03-19T18:12:58.968Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T18:12:58.973Z"
+    },
+    {
+      "id": "cf19a5a3-fa8c-4975-be1f-9724bba47e76",
+      "projectId": "6c10e611-8002-4236-818c-d1012d1ae52b",
+      "type": "checkin",
+      "timestampISO": "2026-05-13T20:06:55.066Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-13T20:06:55.068Z"
+    },
+    {
+      "id": "d22ea2b5-a0fc-4989-b258-8c06edc5a1b7",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-01T12:23:06.687Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-01T12:23:06.689Z"
+    },
+    {
+      "id": "d298da80-2378-4317-9045-3eab4a92918f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-12T21:28:50.017Z",
+      "source": "manual",
+      "createdAt": "2026-03-12T21:28:50.019Z"
+    },
+    {
+      "id": "d46652aa-3b6d-4af5-b6ec-16419dace420",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-10T13:02:58.202Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-10T13:02:58.204Z"
+    },
+    {
+      "id": "d970d06a-a63e-44fe-b434-84e75efb224f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-05T22:11:41.183Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T22:11:41.185Z"
+    },
+    {
+      "id": "d977ca86-0935-4ca1-9aa7-3c1aff27bd5e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-06T21:29:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-06T22:29:11.436Z"
+    },
+    {
+      "id": "d9c3c971-cbe1-4c24-8140-de6130f1cf7e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-08T13:00:11.881Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-08T13:00:11.883Z"
+    },
+    {
+      "id": "d9ef49c1-6a20-4538-aea6-9afb58fc62be",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-05T16:01:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-03-05T18:55:48.670Z"
+    },
+    {
+      "id": "d9f7f3bd-14e7-4cec-9cec-046e4796824c",
+      "projectId": "47ce7e12-102c-43a6-9782-1af29cd7861b",
+      "type": "checkout",
+      "timestampISO": "2026-03-19T21:52:32.255Z",
+      "source": "manual",
+      "createdAt": "2026-03-19T21:52:32.255Z"
+    },
+    {
+      "id": "dd32e6e0-fec5-4e18-8efa-095116019dab",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-20T17:09:19.814Z",
+      "source": "manual",
+      "createdAt": "2026-03-20T17:09:19.815Z"
+    },
+    {
+      "id": "ddbbe413-c54b-4015-ad85-af2415b90b34",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-07T16:57:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-09T16:39:54.841Z"
+    },
+    {
+      "id": "de888a89-0930-4f00-a1e4-7cbbe4369403",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-26T17:29:00.000Z",
+      "note": "Segunda mão na cozinha e banheiro social",
+      "source": "manual",
+      "createdAt": "2026-03-26T20:56:24.249Z"
+    },
+    {
+      "id": "dfa3bb76-eb4d-454c-84f9-84d4b8507a8c",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-05-12T13:11:00.514Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-12T13:11:00.518Z"
+    },
+    {
+      "id": "e16e92b3-f2b0-4303-bc3b-c993125ba15e",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-17T12:53:01.635Z",
+      "source": "manual",
+      "createdAt": "2026-03-17T12:53:01.637Z"
+    },
+    {
+      "id": "e3d4e2c3-eb1a-4bbd-ac62-e7d31ea88b8f",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-26T13:11:15.380Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-26T13:11:15.381Z"
+    },
+    {
+      "id": "e5269319-3889-4e54-ab4c-08c6898088a5",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-04-30T19:49:20.558Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-30T19:49:20.559Z"
+    },
+    {
+      "id": "e55dd29e-88f3-4ba1-882e-da94c19c551a",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-03-25T21:13:00.000Z",
+      "note": "Fizemos o restante das portas e dos trims estava somente eu três pessoas a mais com o Madson. falei com Augusto pois a cliente perguntou algo está fora do contrato que seria a pintura do banco de madeira estava na cozinha das persianas de madeira do quarto do casal da da sala e da entrada da casa. Augusto disse que precisava ser lançado como acréscimo de projeto ainda não falei isso para a cliente",
+      "source": "manual",
+      "createdAt": "2026-03-25T21:13:06.571Z"
+    },
+    {
+      "id": "e7db19b5-9505-4081-9ca0-99226184f9ef",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkin",
+      "timestampISO": "2026-04-02T18:09:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T18:08:52.601Z"
+    },
+    {
+      "id": "ecb86291-6e4a-4f4b-afc5-07214efd2471",
+      "projectId": "8a2759e7-a9a9-422f-a402-403cc5d20de2",
+      "type": "checkin",
+      "timestampISO": "2026-05-06T18:00:55.621Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T18:00:55.626Z"
+    },
+    {
+      "id": "ed865c10-4887-4a68-83a5-6fe21f7e972a",
+      "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
+      "type": "checkout",
+      "timestampISO": "2026-02-25T15:10:00.000Z",
+      "source": "manual",
+      "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "ed97db00-09fb-48e8-9d51-a6cee1935920",
+      "projectId": "f3098253-cd84-4ef3-bdb4-d7be9b26b683",
+      "type": "checkout",
+      "timestampISO": "2026-05-06T18:00:55.621Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T18:00:55.623Z"
+    },
+    {
+      "id": "ef206c05-16a9-4c0e-876d-ef342a6538c0",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-09T12:28:21.151Z",
+      "source": "manual",
+      "createdAt": "2026-03-09T12:28:21.152Z"
+    },
+    {
+      "id": "f11bf646-daf9-488c-afaf-d4400fea7866",
+      "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
+      "type": "checkout",
+      "timestampISO": "2026-03-30T17:49:18.164Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-03-30T17:49:18.165Z"
+    },
+    {
+      "id": "f1329ccf-3d50-424f-83d0-91a14d50e01d",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-03-10T18:16:54.166Z",
+      "source": "manual",
+      "createdAt": "2026-03-10T18:16:54.166Z"
+    },
+    {
+      "id": "f25bcc75-f14d-4301-b8a5-21e0ca3d539b",
+      "projectId": "0ee3c97c-9b2b-4d3a-bd19-8c2e8a964155",
+      "type": "checkout",
+      "timestampISO": "2026-03-16T16:44:16.360Z",
+      "source": "manual",
+      "createdAt": "2026-03-16T16:44:16.361Z"
+    },
+    {
+      "id": "f35c020c-3174-46a9-a523-8d34f76b7fa9",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-16T12:57:52.149Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-16T12:57:52.151Z"
+    },
+    {
+      "id": "f455f5fd-d952-4e19-a0f1-86b20ffb7ee1",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-05-12T21:39:22.542Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-12T21:39:22.543Z"
+    },
+    {
+      "id": "f530df89-ea06-4bce-bf4d-9df4a9c4e258",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-04-01T13:20:11.077Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-01T13:20:11.077Z"
+    },
+    {
+      "id": "f56541fd-b83a-4afe-90d0-d8bbda27dc81",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkin",
+      "timestampISO": "2026-05-05T14:54:15.836Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-05T14:54:15.838Z"
+    },
+    {
+      "id": "f5abcd25-7a05-481a-8ba6-b2d0cd760060",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkin",
+      "timestampISO": "2026-04-02T15:05:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T17:04:42.073Z"
+    },
+    {
+      "id": "f6da0541-0ad7-4e16-8401-5b3b53f83c70",
+      "projectId": "f3098253-cd84-4ef3-bdb4-d7be9b26b683",
+      "type": "checkin",
+      "timestampISO": "2026-05-06T15:48:18.420Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-06T15:48:18.423Z"
+    },
+    {
+      "id": "f6e4bbc6-5f5f-434c-935f-ebd6faef7998",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-04-09T20:07:35.167Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-09T20:07:35.168Z"
+    },
+    {
+      "id": "f851f457-4ad4-4eca-8e7b-146862f12940",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkin",
+      "timestampISO": "2026-04-15T13:06:17.238Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T13:06:17.239Z"
+    },
+    {
+      "id": "f8520ec3-748b-44b9-82f7-46a61d4e1776",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-04-30T12:57:44.598Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-30T12:57:44.600Z"
+    },
+    {
+      "id": "f8d63594-a3c7-4dcb-ad1f-500fd5718532",
+      "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
+      "type": "checkout",
+      "timestampISO": "2026-05-11T21:29:03.600Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-05-11T21:29:03.603Z"
+    },
+    {
+      "id": "f921e7fa-5e1c-4f3d-aae1-235f66c1db71",
+      "projectId": "5e6fb3bc-6c87-4181-9bff-b58615a0d934",
+      "type": "checkout",
+      "timestampISO": "2026-04-15T18:29:48.245Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-15T18:29:48.246Z"
+    },
+    {
+      "id": "fa023fe8-f60a-414f-9e65-76e0a82d911c",
+      "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
+      "type": "checkout",
+      "timestampISO": "2026-04-02T18:08:52.598Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-04-02T18:08:52.599Z"
+    }
+  ],
+  "v": 2,
+  "at": "2026-05-14T12:54:30.856Z"
+}
