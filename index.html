@@ -2212,6 +2212,41 @@ function renderSettings(main) {
       var pi = el('input',''); pi.type='text'; pi.placeholder='timetrack-backup.json'; pi.value=GH.path;
       f3.appendChild(pi); mo.appendChild(f3);
 
+      var testStatus = div('');
+      testStatus.style.cssText = 'font-size:12px;font-family:monospace;padding:8px 12px;border-radius:8px;background:var(--sf2);border:1px solid var(--bd);margin-bottom:10px;display:none;';
+      mo.appendChild(testStatus);
+
+      var testBtn = btn('btn bs bfull', '🔌  Testar Conexão', function() {
+        var tok = ti.value.trim(), repo = ri.value.trim();
+        if (!tok) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Informe o token.</span>'; return; }
+        if (!repo) { testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--ac3)">Informe o repositório.</span>'; return; }
+        testBtn.textContent = 'Testando...'; testBtn.disabled = true;
+        testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--mu)">Verificando...</span>';
+        fetch('https://api.github.com/repos/' + repo, {
+          headers: {'Authorization': 'Bearer ' + tok, 'Accept': 'application/vnd.github.v3+json'}
+        })
+        .then(function(res) {
+          testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
+          if (res.status === 200) {
+            testStatus.innerHTML = '<span style="color:var(--ac)">✓ Conectado! Token e repositório válidos.</span>';
+          } else if (res.status === 401) {
+            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Token inválido ou expirado. Gere um novo em github.com → Settings → Developer settings.</span>';
+          } else if (res.status === 403) {
+            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Sem permissão. O token precisa do escopo <b>repo</b>.</span>';
+          } else if (res.status === 404) {
+            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Repositório não encontrado. Verifique "usuario/repo".</span>';
+          } else {
+            testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Erro ' + res.status + '. Verifique os dados.</span>';
+          }
+        })
+        .catch(function() {
+          testBtn.textContent = '🔌  Testar Conexão'; testBtn.disabled = false;
+          testStatus.innerHTML = '<span style="color:var(--ac3)">✗ Sem conexão com o GitHub. Verifique Wi-Fi ou dados móveis.</span>';
+        });
+      });
+      testBtn.style.marginBottom = '10px';
+      mo.appendChild(testBtn);
+
       var row = div('brow');
       var cb = btn('btn bs', 'Cancelar', close); cb.style.flex='1';
       var sb = btn('btn bp', 'Salvar', function() {
@@ -2247,14 +2282,14 @@ function renderSettings(main) {
       var b64 = btoa(unescape(encodeURIComponent(json)));
       var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
       // First get current SHA (needed to update existing file)
-      fetch(apiUrl, {headers:{'Authorization':'token '+GH.token,'Accept':'application/vnd.github.v3+json'}})
+      fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
         .then(function(res){ return res.ok ? res.json() : null; })
         .then(function(existing) {
           var body = {message:'TimeTrack backup ' + new Date().toISOString().slice(0,10), content:b64};
           if (existing && existing.sha) body.sha = existing.sha;
           return fetch(apiUrl, {
             method:'PUT',
-            headers:{'Authorization':'token '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
+            headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
             body:JSON.stringify(body)
           });
         })
@@ -2269,7 +2304,7 @@ function renderSettings(main) {
         })
         .catch(function(e) {
           bkNowBtn.textContent = '\u2601\uFE0F  Fazer Backup Agora'; bkNowBtn.disabled = false;
-          toast('Erro de conex\u00E3o', 'e');
+          toast('Sem conex\u00E3o com o GitHub. Verifique internet e tente novamente.', 'e', 6000);
         });
     });
       }
@@ -2289,7 +2324,7 @@ function renderSettings(main) {
         restBtn.textContent = 'Buscando...'; restBtn.disabled = true;
         var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
                 // Use raw download URL to avoid base64 issues
-        fetch(apiUrl, {headers:{'Authorization':'token '+GH.token,'Accept':'application/vnd.github.v3.raw'}})
+        fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3.raw'}})
           .then(function(res){
             if(!res.ok) throw new Error('Arquivo n\u00E3o encontrado ('+res.status+')');
             return res.text();
@@ -2356,7 +2391,7 @@ function renderSettings(main) {
             var b64 = btoa(unescape(encodeURIComponent(fr.result)));
             var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/index.html';
             updStatus.innerHTML = '<span style="color:var(--mu)">Buscando SHA atual...</span>';
-            fetch(apiUrl, {headers:{'Authorization':'token '+GH.token,'Accept':'application/vnd.github.v3+json'}})
+            fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
               .then(function(res){ return res.ok ? res.json() : null; })
               .then(function(existing) {
                 var msg = 'TimeTrack update ' + new Date().toISOString().slice(0,16).replace('T',' ');
@@ -2365,7 +2400,7 @@ function renderSettings(main) {
                 updStatus.innerHTML = '<span style="color:var(--mu)">Publicando...</span>';
                 return fetch(apiUrl, {
                   method:'PUT',
-                  headers:{'Authorization':'token '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
+                  headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
                   body:JSON.stringify(body)
                 });
               })
