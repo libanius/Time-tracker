@@ -256,6 +256,31 @@ function uid() {
 ================================= */
 var S = {tab: 'home', projects: [], events: [], timerInt: null};
 var GH = {token: '', repo: '', path: 'timetrack-backup.json'};
+
+// XHR-based fetch wrapper — more reliable than fetch() in iOS PWA standalone mode
+function ghFetch(url, opts) {
+  opts = opts || {};
+  return new Promise(function(resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(opts.method || 'GET', url, true);
+    var headers = opts.headers || {};
+    Object.keys(headers).forEach(function(k) { xhr.setRequestHeader(k, headers[k]); });
+    xhr.timeout = 20000;
+    xhr.onload = function() {
+      var status = xhr.status;
+      var body = xhr.responseText;
+      resolve({
+        ok: status >= 200 && status < 300,
+        status: status,
+        json: function() { try { return Promise.resolve(JSON.parse(body)); } catch(e) { return Promise.reject(e); } },
+        text: function() { return Promise.resolve(body); }
+      });
+    };
+    xhr.onerror = function() { reject(new Error('Sem conexão com o servidor GitHub (XHR network error)')); };
+    xhr.ontimeout = function() { reject(new Error('Tempo limite esgotado — GitHub demorou demais')); };
+    xhr.send(opts.body || null);
+  });
+}
 var F = {type: 'checkin', projId: '', date: '', useNow: true, time: ''};
 var RS = {period: 'today', df: '', dt: '', projId: ''};
 
@@ -2227,11 +2252,11 @@ function renderSettings(main) {
         testBtn.textContent = 'Testando...'; testBtn.disabled = true;
         testStatus.style.display=''; testStatus.innerHTML='<span style="color:var(--mu)">1/2 Verificando internet...</span>';
         // Step 1: test basic GitHub reachability (no auth, no CORS preflight)
-        fetch('https://api.github.com', {method: 'GET'})
+        ghFetch('https://api.github.com', {method: 'GET'})
           .then(function() {
             testStatus.innerHTML = '<span style="color:var(--mu)">2/2 Verificando token e repositório...</span>';
             // Step 2: test with auth
-            return fetch('https://api.github.com/repos/' + repo, {
+            return ghFetch('https://api.github.com/repos/' + repo, {
               headers: {'Authorization': 'Bearer ' + tok, 'Accept': 'application/vnd.github.v3+json'}
             });
           })
@@ -2295,12 +2320,12 @@ function renderSettings(main) {
       var b64 = btoa(unescape(encodeURIComponent(json)));
       var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
       // First get current SHA (needed to update existing file)
-      fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
+      ghFetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
         .then(function(res){ return res.ok ? res.json() : null; })
         .then(function(existing) {
           var body = {message:'TimeTrack backup ' + new Date().toISOString().slice(0,10), content:b64};
           if (existing && existing.sha) body.sha = existing.sha;
-          return fetch(apiUrl, {
+          return ghFetch(apiUrl, {
             method:'PUT',
             headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
             body:JSON.stringify(body)
@@ -2337,7 +2362,7 @@ function renderSettings(main) {
         restBtn.textContent = 'Buscando...'; restBtn.disabled = true;
         var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/' + GH.path;
                 // Use raw download URL to avoid base64 issues
-        fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3.raw'}})
+        ghFetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3.raw'}})
           .then(function(res){
             if(!res.ok) throw new Error('Arquivo n\u00E3o encontrado ('+res.status+')');
             return res.text();
@@ -2404,14 +2429,14 @@ function renderSettings(main) {
             var b64 = btoa(unescape(encodeURIComponent(fr.result)));
             var apiUrl = 'https://api.github.com/repos/' + GH.repo + '/contents/index.html';
             updStatus.innerHTML = '<span style="color:var(--mu)">Buscando SHA atual...</span>';
-            fetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
+            ghFetch(apiUrl, {headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json'}})
               .then(function(res){ return res.ok ? res.json() : null; })
               .then(function(existing) {
                 var msg = 'TimeTrack update ' + new Date().toISOString().slice(0,16).replace('T',' ');
                 var body = {message:msg, content:b64};
                 if (existing && existing.sha) body.sha = existing.sha;
                 updStatus.innerHTML = '<span style="color:var(--mu)">Publicando...</span>';
-                return fetch(apiUrl, {
+                return ghFetch(apiUrl, {
                   method:'PUT',
                   headers:{'Authorization':'Bearer '+GH.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
                   body:JSON.stringify(body)
