@@ -116,9 +116,9 @@
       "hourlyRateUsd": 28,
       "color": "#ff6b6b",
       "category": "",
-      "active": true,
+      "active": false,
       "createdAt": "2026-04-29T14:34:48.154Z",
-      "updatedAt": "2026-04-29T14:34:48.154Z"
+      "updatedAt": "2026-06-10T21:49:08.751Z"
     },
     {
       "id": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
@@ -129,6 +129,16 @@
       "active": true,
       "createdAt": "2026-04-18T14:58:08.059Z",
       "updatedAt": "2026-05-27T14:29:56.359Z"
+    },
+    {
+      "id": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "name": "Rami",
+      "hourlyRateUsd": 28,
+      "color": "#ff9ff3",
+      "category": "",
+      "active": true,
+      "createdAt": "2026-06-10T20:29:00.047Z",
+      "updatedAt": "2026-06-10T20:29:00.047Z"
     },
     {
       "id": "b18986bb-4016-41e7-9fbe-1ad89ff496b3",
@@ -168,7 +178,7 @@
       "category": "",
       "active": true,
       "createdAt": "2026-06-05T21:09:01.887Z",
-      "updatedAt": "2026-06-05T21:09:01.887Z"
+      "updatedAt": "2026-06-13T17:14:29.934Z"
     },
     {
       "id": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
@@ -187,8 +197,8 @@
       "color": "#ff6b6b",
       "category": "",
       "createdAt": "2026-02-28T23:30:00.000Z",
-      "updatedAt": "2026-05-14T20:56:41.524Z",
-      "active": true
+      "updatedAt": "2026-06-10T21:49:24.328Z",
+      "active": false
     },
     {
       "id": "f3098253-cd84-4ef3-bdb4-d7be9b26b683",
@@ -246,6 +256,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-20T20:41:38.468Z"
+    },
+    {
+      "id": "02d671a0-2be6-49c2-9f7c-3c896a73981b",
+      "projectId": "62fdff5c-2f74-4589-b4b8-88b187fd1879",
+      "type": "checkin",
+      "timestampISO": "2026-06-11T12:05:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-11T21:06:32.607Z"
     },
     {
       "id": "02eab0ce-6a14-4e70-a3bd-e5ff65c9ebc4",
@@ -316,6 +335,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-06-05T21:07:05.416Z"
+    },
+    {
+      "id": "0a67ada1-58e8-4963-8ecf-e91914df6487",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-06-12T20:55:28.759Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T20:55:28.759Z"
     },
     {
       "id": "0bbd79e9-1a37-4851-a0f5-33d95721ef36",
@@ -414,6 +442,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-06-05T21:10:15.583Z"
+    },
+    {
+      "id": "1bd293a7-0d68-40f9-97ac-5ec84e557f2d",
+      "projectId": "e79eb857-1dec-4996-b56c-25ff9c43d26c",
+      "type": "checkin",
+      "timestampISO": "2026-06-13T12:14:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-13T17:14:49.264Z"
     },
     {
       "id": "1c86637f-493b-42db-8b70-65aadd0a1a6d",
@@ -680,6 +717,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-06-06T21:20:19.634Z"
+    },
+    {
+      "id": "36007c25-ad8b-4120-9efb-095f04e07a88",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkin",
+      "timestampISO": "2026-06-12T20:55:28.759Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T20:55:28.762Z"
     },
     {
       "id": "38e21fb2-2c05-4d02-a696-0b497d47e3c7",
@@ -1007,6 +1053,15 @@
       "timestampISO": "2026-02-26T08:40:00.000Z",
       "source": "manual",
       "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "5535f8b6-08a2-47a9-b245-eaaf85a4d3d9",
+      "projectId": "e79eb857-1dec-4996-b56c-25ff9c43d26c",
+      "type": "checkout",
+      "timestampISO": "2026-06-13T18:42:39.318Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-13T18:42:39.318Z"
     },
     {
       "id": "5558ffa3-07a5-4ebd-80ca-6cd406503f80",
@@ -1462,6 +1517,15 @@
       "createdAt": "2026-03-21T12:45:18.813Z"
     },
     {
+      "id": "8b1e41c8-3dc4-451f-8017-a446664c71b1",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-06-12T14:53:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T20:53:46.812Z"
+    },
+    {
       "id": "8b567e67-766b-46c6-9a25-ddbc0731499b",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
@@ -1699,6 +1763,15 @@
       "createdAt": "2026-03-30T17:49:18.168Z"
     },
     {
+      "id": "a798e7d1-5862-4c3b-b50e-f5e1aaf4eeb7",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-06-12T12:45:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T13:46:00.962Z"
+    },
+    {
       "id": "a800d33e-4a68-40f7-bd9b-1ee173c1d209",
       "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "type": "checkout",
@@ -1715,6 +1788,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-17T17:38:47.593Z"
+    },
+    {
+      "id": "a99065ea-edbe-4d3f-8d25-1ab798ed7539",
+      "projectId": "62fdff5c-2f74-4589-b4b8-88b187fd1879",
+      "type": "checkout",
+      "timestampISO": "2026-06-11T21:06:36.137Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-11T21:06:36.138Z"
     },
     {
       "id": "aa7c5ff1-b7d4-4f7f-8066-d2a70b4c785d",
@@ -1856,6 +1938,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-06-08T13:30:30.821Z"
+    },
+    {
+      "id": "c4935669-165c-4996-b523-483dd820a6d9",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkout",
+      "timestampISO": "2026-06-12T22:54:23.851Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T22:54:23.852Z"
     },
     {
       "id": "c4de4003-7c06-4733-afbf-42bd0a25f8c6",
@@ -2030,6 +2121,15 @@
       "createdAt": "2026-05-09T16:39:54.841Z"
     },
     {
+      "id": "ddbc8bbb-d41f-416f-b739-431eba08aa41",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkout",
+      "timestampISO": "2026-06-10T22:27:06.671Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-10T22:27:06.672Z"
+    },
+    {
       "id": "de888a89-0930-4f00-a1e4-7cbbe4369403",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -2054,6 +2154,15 @@
       "timestampISO": "2026-03-17T12:53:01.635Z",
       "source": "manual",
       "createdAt": "2026-03-17T12:53:01.637Z"
+    },
+    {
+      "id": "e1cd0760-9b6b-4762-b661-8e5a29de5475",
+      "projectId": "62fdff5c-2f74-4589-b4b8-88b187fd1879",
+      "type": "checkout",
+      "timestampISO": "2026-06-10T20:29:14.929Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-10T20:29:14.929Z"
     },
     {
       "id": "e3d4e2c3-eb1a-4bbd-ac62-e7d31ea88b8f",
@@ -2090,6 +2199,15 @@
       "note": "Fizemos o restante das portas e dos trims estava somente eu três pessoas a mais com o Madson. falei com Augusto pois a cliente perguntou algo está fora do contrato que seria a pintura do banco de madeira estava na cozinha das persianas de madeira do quarto do casal da da sala e da entrada da casa. Augusto disse que precisava ser lançado como acréscimo de projeto ainda não falei isso para a cliente",
       "source": "manual",
       "createdAt": "2026-03-25T21:13:06.571Z"
+    },
+    {
+      "id": "e5ae652d-abce-43c3-812f-5611d5b483b7",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-06-12T15:54:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-12T20:53:46.814Z"
     },
     {
       "id": "e7394fad-5eea-4f6f-af15-7319f332539d",
@@ -2385,6 +2503,15 @@
       "createdAt": "2026-04-02T18:08:52.599Z"
     },
     {
+      "id": "fa0e7371-222b-458a-890b-23db8edc8697",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkin",
+      "timestampISO": "2026-06-10T20:29:14.929Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-10T20:29:14.937Z"
+    },
+    {
       "id": "feb38825-6592-4c3b-b314-ff856473320f",
       "projectId": "62fdff5c-2f74-4589-b4b8-88b187fd1879",
       "type": "checkin",
@@ -2396,7 +2523,7 @@
   ],
   "payments": [],
   "v": 3,
-  "at": "2026-06-10T13:31:16.131Z",
+  "at": "2026-06-14T20:56:58.597Z",
   "gh": {
     "repo": "Libanius/Time-tracker",
     "path": "timetrack-backup.json"
