@@ -408,6 +408,15 @@
       "createdAt": "2026-05-28T18:07:23.662Z"
     },
     {
+      "id": "15f5dec4-1298-4aa3-bc6e-5fcd24f36658",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-06-15T21:32:00.000Z",
+      "note": "Danielle Klein",
+      "source": "manual",
+      "createdAt": "2026-06-15T22:31:18.000Z"
+    },
+    {
       "id": "16ba3c17-b182-45d1-923e-850b9bcd212d",
       "projectId": "e8c8615c-d960-4c61-8ac5-34ebd10525a7",
       "type": "checkin",
@@ -641,6 +650,15 @@
       "timestampISO": "2026-02-28T09:00:00.000Z",
       "source": "manual",
       "createdAt": "2026-02-28T23:30:00.000Z"
+    },
+    {
+      "id": "2eb4f4c8-c090-4578-a477-f99500017ebf",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-06-17T18:34:49.642Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-17T18:34:49.643Z"
     },
     {
       "id": "2f29a54a-2270-46ef-8045-df796a60d66f",
@@ -887,6 +905,24 @@
       "timestampISO": "2026-03-13T12:30:52.230Z",
       "source": "manual",
       "createdAt": "2026-03-13T12:30:52.231Z"
+    },
+    {
+      "id": "4484f19a-5bbc-4136-ad37-2b06095945f9",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkout",
+      "timestampISO": "2026-06-15T21:31:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-15T22:31:17.996Z"
+    },
+    {
+      "id": "44f8951b-0f4e-42df-88d3-e2fe46ff5680",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-06-18T21:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-22T12:14:54.779Z"
     },
     {
       "id": "45ecdb71-aac8-4942-8e41-b5477f102d96",
@@ -1143,6 +1179,15 @@
       "createdAt": "2026-04-18T21:06:04.763Z"
     },
     {
+      "id": "5c6e95f1-a20a-407e-8772-7285bc2192bc",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-06-15T22:31:21.026Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-15T22:31:21.027Z"
+    },
+    {
       "id": "5d9a0422-bfb3-48d4-a155-15905fef776c",
       "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
       "type": "checkout",
@@ -1177,6 +1222,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-13T12:23:32.310Z"
+    },
+    {
+      "id": "6206fe70-1e0d-49ed-ad86-b3249b39af72",
+      "projectId": "d90e4dd6-b193-4e76-9c46-1cc46657011d",
+      "type": "checkin",
+      "timestampISO": "2026-06-15T12:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-15T12:37:08.343Z"
     },
     {
       "id": "62ea2221-66f9-444b-9d32-d7a1abe982fa",
@@ -1367,6 +1421,15 @@
       "createdAt": "2026-06-05T21:05:52.799Z"
     },
     {
+      "id": "77def054-aedd-42f4-879e-b3296e689e89",
+      "projectId": "d90e4dd6-b193-4e76-9c46-1cc46657011d",
+      "type": "checkout",
+      "timestampISO": "2026-06-15T12:37:14.992Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-15T12:37:14.992Z"
+    },
+    {
       "id": "78482bd3-ac41-4941-9558-373f2fc67861",
       "projectId": "279c1420-fa8f-49dc-a792-5e2a53ab6ff5",
       "type": "checkout",
@@ -1426,6 +1489,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-04-06T12:22:23.385Z"
+    },
+    {
+      "id": "7ee152ca-d3d5-4c35-9e68-ca4cbfa350aa",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-06-16T12:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-16T21:08:07.982Z"
     },
     {
       "id": "7efda7d8-da7a-474e-91ca-2cb1c793bcd0",
@@ -1562,6 +1634,15 @@
       "createdAt": "2026-04-28T21:13:08.638Z"
     },
     {
+      "id": "9025e253-049e-44e4-9efd-3a986931cac1",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkin",
+      "timestampISO": "2026-06-22T12:55:41.298Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-22T12:55:41.300Z"
+    },
+    {
       "id": "90739adc-5844-4404-ba72-5e808606a18b",
       "projectId": "c6c8b8da-61d2-4872-b99e-7476c51eeb7a",
       "type": "checkin",
@@ -1655,6 +1736,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-17T17:41:30.965Z"
+    },
+    {
+      "id": "9b9675c6-96f3-4451-ba70-3d24d5ad6a03",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkout",
+      "timestampISO": "2026-06-16T18:08:00.000Z",
+      "note": "Inspetor estrutural",
+      "source": "manual",
+      "createdAt": "2026-06-16T21:08:24.463Z"
     },
     {
       "id": "9c61acf7-9bf3-4bd6-b2e7-64b89a57cfec",
@@ -1860,6 +1950,15 @@
       "createdAt": "2026-05-11T12:50:15.992Z"
     },
     {
+      "id": "b798e034-0805-4921-aa9e-f9e253b25eaa",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-06-17T18:34:49.642Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-17T18:34:49.648Z"
+    },
+    {
       "id": "b84e82e0-e2ae-42bc-b576-eea2ca973d6c",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkin",
@@ -1876,6 +1975,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-04T19:24:40.967Z"
+    },
+    {
+      "id": "b9996658-d04b-4966-a3d9-930b3d39b973",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkin",
+      "timestampISO": "2026-06-16T18:08:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-16T21:08:24.466Z"
     },
     {
       "id": "b9a7568d-3c35-4898-81ba-5f77bc6fbee9",
@@ -1964,6 +2072,15 @@
       "timestampISO": "2026-03-17T21:42:01.588Z",
       "source": "manual",
       "createdAt": "2026-03-17T21:42:01.588Z"
+    },
+    {
+      "id": "c8ca537e-c696-4e13-a007-0906b81d66ac",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-06-17T13:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-17T18:34:42.791Z"
     },
     {
       "id": "c99b87ea-c6e1-463c-ac69-14b9a68daef9",
@@ -2104,6 +2221,24 @@
       "createdAt": "2026-05-20T11:51:47.423Z"
     },
     {
+      "id": "db838a71-1fea-4583-bb9d-d56fea7ef36d",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-06-17T21:14:23.845Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-17T21:14:23.846Z"
+    },
+    {
+      "id": "dceb7f28-ab03-4cff-863a-4ad8c0acb2c7",
+      "projectId": "90f3afa2-f4ef-4840-a9cc-68dd470939a8",
+      "type": "checkin",
+      "timestampISO": "2026-06-15T12:37:14.992Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-15T12:37:14.994Z"
+    },
+    {
       "id": "dd32e6e0-fec5-4e18-8efa-095116019dab",
       "projectId": "fdd4f6d4-de77-4dea-8b2c-a7f89e88e80f",
       "type": "checkout",
@@ -2163,6 +2298,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-06-10T20:29:14.929Z"
+    },
+    {
+      "id": "e3a6d50c-6c02-40d7-9947-96b176943dad",
+      "projectId": "231cffe2-0de9-4c93-8fa9-9c2405550f02",
+      "type": "checkin",
+      "timestampISO": "2026-06-18T12:00:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-22T12:14:50.368Z"
     },
     {
       "id": "e3d4e2c3-eb1a-4bbd-ac62-e7d31ea88b8f",
@@ -2262,6 +2406,15 @@
       "note": "",
       "source": "manual",
       "createdAt": "2026-05-19T12:39:03.299Z"
+    },
+    {
+      "id": "ec838f54-cfa3-401a-a9b5-e215a97f915e",
+      "projectId": "907c24e1-eed8-467c-aa0e-a19a95ccfe26",
+      "type": "checkout",
+      "timestampISO": "2026-06-16T21:33:00.000Z",
+      "note": "",
+      "source": "manual",
+      "createdAt": "2026-06-17T18:33:21.876Z"
     },
     {
       "id": "ecb86291-6e4a-4f4b-afc5-07214efd2471",
@@ -2523,7 +2676,7 @@
   ],
   "payments": [],
   "v": 3,
-  "at": "2026-06-14T20:58:59.322Z",
+  "at": "2026-06-22T12:55:53.232Z",
   "gh": {
     "repo": "Libanius/Time-tracker",
     "path": "timetrack-backup.json"
